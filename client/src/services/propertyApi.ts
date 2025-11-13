@@ -23,7 +23,7 @@ const getApiBaseUrl = (): string => {
   const isProduction = import.meta.env.MODE === 'production';
 
   if (isProduction) {
-    return import.meta.env.VITE_API_URL || 'https://api.pristineprimier.com/api';
+    return import.meta.env.VITE_API_URL || 'https://api.crestlineproperties.co.ke/api';
   }
   return import.meta.env.VITE_API_URL || 'http://localhost:8000/api';
 };

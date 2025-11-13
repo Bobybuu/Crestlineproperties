@@ -1,7 +1,7 @@
 // services/inquiryApi.ts
 import { toast } from 'sonner';
 
-const API_BASE_URL = 'https://api.pristineprimier.com/api';
+const API_BASE_URL = 'https://api.crestlineproperties.co.ke/api';
 
 export interface InquiryData {
   name: string;

@@ -25,7 +25,7 @@ const getApiBaseUrl = (): string => {
   const isProduction = import.meta.env.MODE === 'production';
 
   if (isProduction) {
-    return import.meta.env.VITE_API_URL || 'https://api.pristineprimier.com/api';
+    return import.meta.env.VITE_API_URL || 'https://api.crestlineproperties.co.ke/api';
   }
   return import.meta.env.VITE_API_URL || 'http://localhost:8000/api';
 };
@@ -34,7 +34,7 @@ const getMediaBaseUrl = (): string => {
   const isProduction = import.meta.env.MODE === 'production';
 
   if (isProduction) {
-    return import.meta.env.VITE_MEDIA_URL || 'https://api.pristineprimier.com';
+    return import.meta.env.VITE_MEDIA_URL || 'https://api.crestlineproperties.co.ke';
   }
   return import.meta.env.VITE_MEDIA_URL || 'http://localhost:8000';
 };
