@@ -2015,3 +2015,328 @@ django.template.exceptions.TemplateDoesNotExist: index.html
 ERROR 2025-11-08 12:47:55,201 basehttp 18404 31984 "GET /favicon.ico HTTP/1.1" 500 92877
 INFO 2025-11-08 12:48:23,067 basehttp 18404 21212 "OPTIONS /api/auth/me/ HTTP/1.1" 200 0
 INFO 2025-11-08 12:48:23,069 basehttp 18404 25744 "OPTIONS /api/properties/5/ HTTP/1.1" 200 0
+INFO 2025-11-13 14:37:57,699 autoreload 18644 12156 Watching for file changes with StatReloader
+INFO 2025-11-13 14:38:07,159 basehttp 18644 22688 "OPTIONS /api/auth/me/ HTTP/1.1" 200 0
+INFO 2025-11-13 14:38:07,176 basehttp 18644 18180 "OPTIONS /api/properties/?featured=true&limit=6 HTTP/1.1" 200 0
+INFO 2025-11-13 14:38:07,500 basehttp 18644 9332 "GET /api/auth/me/ HTTP/1.1" 200 32
+INFO 2025-11-13 14:38:07,752 basehttp 18644 19164 "GET /api/properties/?featured=true&limit=6 HTTP/1.1" 200 52
+INFO 2025-11-13 14:46:05,036 basehttp 18644 5032 "GET /api/auth/me/ HTTP/1.1" 200 32
+INFO 2025-11-13 14:46:05,310 basehttp 18644 19696 "GET /api/properties/?featured=true&limit=6 HTTP/1.1" 200 52
+INFO 2025-11-13 14:46:08,952 basehttp 18644 6804 "GET /api/auth/csrf/ HTTP/1.1" 200 81
+INFO 2025-11-13 14:46:08,959 basehttp 18644 6804 "GET /api/auth/csrf/ HTTP/1.1" 200 81
+INFO 2025-11-13 14:46:09,496 basehttp 18644 12052 "OPTIONS /api/auth/me/ HTTP/1.1" 200 0
+INFO 2025-11-13 14:46:09,496 basehttp 18644 23820 "OPTIONS /api/properties/?featured=true&limit=6 HTTP/1.1" 200 0
+INFO 2025-11-13 14:46:15,606 basehttp 18644 5032 "GET /api/auth/me/ HTTP/1.1" 200 32
+INFO 2025-11-13 14:46:16,611 basehttp 18644 19696 "GET /api/properties/?featured=true&limit=6 HTTP/1.1" 200 52
+INFO 2025-11-13 14:46:19,023 basehttp 18644 6804 "GET /api/auth/csrf/ HTTP/1.1" 200 81
+INFO 2025-11-13 14:46:19,105 basehttp 18644 6804 "GET /api/auth/csrf/ HTTP/1.1" 200 81
+INFO 2025-11-13 14:46:20,059 basehttp 18644 23820 "OPTIONS /api/properties/?featured=true&limit=6 HTTP/1.1" 200 0
+INFO 2025-11-13 14:46:20,088 basehttp 18644 23820 "OPTIONS /api/auth/me/ HTTP/1.1" 200 0
+INFO 2025-11-13 14:46:24,338 basehttp 18644 5032 "GET /api/auth/me/ HTTP/1.1" 200 32
+INFO 2025-11-13 14:46:25,287 basehttp 18644 19696 "GET /api/properties/?featured=true&limit=6 HTTP/1.1" 200 52
+INFO 2025-11-13 14:46:28,428 basehttp 18644 6804 "GET /api/auth/csrf/ HTTP/1.1" 200 81
+INFO 2025-11-13 14:46:28,438 basehttp 18644 6804 "GET /api/auth/csrf/ HTTP/1.1" 200 81
+INFO 2025-11-13 14:46:28,529 basehttp 18644 23820 "OPTIONS /api/properties/?featured=true&limit=6 HTTP/1.1" 200 0
+INFO 2025-11-13 14:46:28,529 basehttp 18644 12052 "OPTIONS /api/auth/me/ HTTP/1.1" 200 0
+INFO 2025-11-13 14:47:31,011 basehttp 18644 5032 "GET /api/auth/me/ HTTP/1.1" 200 32
+INFO 2025-11-13 14:47:31,832 basehttp 18644 19696 "GET /api/properties/?featured=true&limit=6 HTTP/1.1" 200 52
+INFO 2025-11-13 14:47:36,161 basehttp 18644 6804 "GET /api/auth/csrf/ HTTP/1.1" 200 81
+INFO 2025-11-13 14:47:36,166 basehttp 18644 6804 "GET /api/auth/csrf/ HTTP/1.1" 200 81
+INFO 2025-11-13 14:47:36,293 basehttp 18644 12052 "OPTIONS /api/properties/?featured=true&limit=6 HTTP/1.1" 200 0
+INFO 2025-11-13 14:47:36,293 basehttp 18644 23820 "OPTIONS /api/auth/me/ HTTP/1.1" 200 0
+INFO 2025-11-13 14:47:55,905 basehttp 18644 5032 "GET /api/auth/me/ HTTP/1.1" 200 32
+INFO 2025-11-13 14:47:56,470 basehttp 18644 19696 "GET /api/properties/?featured=true&limit=6 HTTP/1.1" 200 52
+INFO 2025-11-13 14:47:58,621 basehttp 18644 6804 "GET /api/auth/csrf/ HTTP/1.1" 200 81
+INFO 2025-11-13 14:47:58,629 basehttp 18644 6804 "GET /api/auth/csrf/ HTTP/1.1" 200 81
+INFO 2025-11-13 14:47:59,343 basehttp 18644 23820 "OPTIONS /api/properties/?featured=true&limit=6 HTTP/1.1" 200 0
+INFO 2025-11-13 14:47:59,351 basehttp 18644 23820 "OPTIONS /api/auth/me/ HTTP/1.1" 200 0
+INFO 2025-11-13 14:49:54,048 basehttp 18644 17644 "OPTIONS /api/properties/? HTTP/1.1" 200 0
+INFO 2025-11-13 14:49:54,230 basehttp 18644 19696 "GET /api/properties/? HTTP/1.1" 200 52
+INFO 2025-11-13 14:49:56,555 basehttp 18644 17644 "OPTIONS /api/properties/?property_type=rental&status=published HTTP/1.1" 200 0
+INFO 2025-11-13 14:49:56,702 basehttp 18644 19696 "GET /api/properties/?property_type=rental&status=published HTTP/1.1" 200 52
+INFO 2025-11-13 14:53:02,282 basehttp 18644 17644 "OPTIONS /api/auth/me/ HTTP/1.1" 200 0
+INFO 2025-11-13 14:53:02,291 basehttp 18644 19696 "GET /api/auth/me/ HTTP/1.1" 200 32
+INFO 2025-11-13 15:02:23,254 basehttp 18644 19764 "GET /api/auth/csrf/ HTTP/1.1" 200 81
+INFO 2025-11-13 15:02:23,575 basehttp 18644 17376 "OPTIONS /api/properties/?featured=true&limit=6 HTTP/1.1" 200 0
+INFO 2025-11-13 15:18:00,031 basehttp 18644 23524 "GET /api/auth/csrf/ HTTP/1.1" 200 81
+INFO 2025-11-13 15:18:00,347 basehttp 18644 21724 "OPTIONS /api/properties/?featured=true&limit=6 HTTP/1.1" 200 0
+INFO 2025-11-13 15:19:55,006 basehttp 18644 23524 "GET /api/auth/csrf/ HTTP/1.1" 200 81
+INFO 2025-11-13 15:19:55,044 basehttp 18644 21724 "OPTIONS /api/properties/?featured=true&limit=6 HTTP/1.1" 200 0
+INFO 2025-11-13 15:20:19,247 basehttp 18644 23524 "GET /api/auth/csrf/ HTTP/1.1" 200 81
+INFO 2025-11-13 15:20:19,281 basehttp 18644 21724 "OPTIONS /api/properties/?featured=true&limit=6 HTTP/1.1" 200 0
+INFO 2025-11-13 15:24:13,693 basehttp 18644 23524 "GET /api/auth/csrf/ HTTP/1.1" 200 81
+INFO 2025-11-13 15:24:13,722 basehttp 18644 21724 "OPTIONS /api/properties/? HTTP/1.1" 200 0
+INFO 2025-11-13 15:24:16,748 basehttp 18644 23524 "GET /api/auth/csrf/ HTTP/1.1" 200 81
+INFO 2025-11-13 15:24:16,788 basehttp 18644 21724 "OPTIONS /api/properties/?property_type=rental&status=published HTTP/1.1" 200 0
+INFO 2025-11-13 15:24:38,307 basehttp 18644 23524 "GET /api/auth/csrf/ HTTP/1.1" 200 81
+INFO 2025-11-13 15:24:38,323 basehttp 18644 21724 "OPTIONS /api/properties/?featured=true&limit=6 HTTP/1.1" 200 0
+INFO 2025-11-13 15:26:01,593 basehttp 18644 23524 "GET /api/auth/csrf/ HTTP/1.1" 200 81
+INFO 2025-11-13 15:26:01,622 basehttp 18644 21724 "OPTIONS /api/properties/?featured=true&limit=6 HTTP/1.1" 200 0
+INFO 2025-11-13 15:26:11,373 basehttp 18644 23524 "GET /api/auth/csrf/ HTTP/1.1" 200 81
+INFO 2025-11-13 15:26:11,394 basehttp 18644 21724 "OPTIONS /api/properties/? HTTP/1.1" 200 0
+INFO 2025-11-13 15:26:17,319 basehttp 18644 23524 "GET /api/auth/csrf/ HTTP/1.1" 200 81
+INFO 2025-11-13 15:26:17,352 basehttp 18644 21724 "OPTIONS /api/properties/?property_type=rental&status=published HTTP/1.1" 200 0
+INFO 2025-11-13 15:26:26,179 basehttp 18644 23524 "GET /api/auth/csrf/ HTTP/1.1" 200 81
+INFO 2025-11-13 15:26:26,219 basehttp 18644 21724 "OPTIONS /api/properties/?featured=true&limit=6 HTTP/1.1" 200 0
+ERROR 2025-11-13 15:29:15,759 log 18644 10384 Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\User1\Documents\Crestlineproperties\Crestlineproperties\server\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\User1\Documents\Crestlineproperties\Crestlineproperties\server\venv\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "C:\Users\User1\Documents\Crestlineproperties\Crestlineproperties\server\venv\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User1\Documents\Crestlineproperties\Crestlineproperties\server\venv\Lib\site-packages\django\template\response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "C:\Users\User1\Documents\Crestlineproperties\Crestlineproperties\server\venv\Lib\site-packages\django\template\response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+  File "C:\Users\User1\Documents\Crestlineproperties\Crestlineproperties\server\venv\Lib\site-packages\django\template\loader.py", line 47, in select_template
+    raise TemplateDoesNotExist(", ".join(template_name_list), chain=chain)
+django.template.exceptions.TemplateDoesNotExist: index.html
+ERROR 2025-11-13 15:29:15,783 basehttp 18644 10384 "GET / HTTP/1.1" 500 91937
+ERROR 2025-11-13 15:29:16,224 log 18644 10384 Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "C:\Users\User1\Documents\Crestlineproperties\Crestlineproperties\server\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\User1\Documents\Crestlineproperties\Crestlineproperties\server\venv\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "C:\Users\User1\Documents\Crestlineproperties\Crestlineproperties\server\venv\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User1\Documents\Crestlineproperties\Crestlineproperties\server\venv\Lib\site-packages\django\template\response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "C:\Users\User1\Documents\Crestlineproperties\Crestlineproperties\server\venv\Lib\site-packages\django\template\response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+  File "C:\Users\User1\Documents\Crestlineproperties\Crestlineproperties\server\venv\Lib\site-packages\django\template\loader.py", line 47, in select_template
+    raise TemplateDoesNotExist(", ".join(template_name_list), chain=chain)
+django.template.exceptions.TemplateDoesNotExist: index.html
+ERROR 2025-11-13 15:29:16,233 basehttp 18644 10384 "GET /favicon.ico HTTP/1.1" 500 91840
+INFO 2025-11-13 15:29:19,318 basehttp 18644 10384 "GET /admin HTTP/1.1" 301 0
+INFO 2025-11-13 15:29:19,448 basehttp 18644 22104 "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-11-13 15:29:19,702 basehttp 18644 22104 "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4213
+INFO 2025-11-13 15:29:20,062 basehttp 18644 22104 "GET /static/admin/css/base.css HTTP/1.1" 200 21310
+INFO 2025-11-13 15:29:20,065 basehttp 18644 8072 "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2694
+INFO 2025-11-13 15:29:20,066 basehttp 18644 18956 "GET /static/admin/css/dark_mode.css HTTP/1.1" 200 2929
+INFO 2025-11-13 15:29:20,090 basehttp 18644 22104 "GET /static/admin/css/login.css HTTP/1.1" 200 958
+INFO 2025-11-13 15:29:20,100 basehttp 18644 18956 "GET /static/admin/css/responsive.css HTTP/1.1" 200 18559
+INFO 2025-11-13 15:29:20,117 basehttp 18644 8072 "GET /static/admin/js/theme.js HTTP/1.1" 200 1943
+INFO 2025-11-13 15:29:20,134 basehttp 18644 22104 "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 3063
+ERROR 2025-11-13 15:29:22,002 log 18644 22104 Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "C:\Users\User1\Documents\Crestlineproperties\Crestlineproperties\server\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\User1\Documents\Crestlineproperties\Crestlineproperties\server\venv\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "C:\Users\User1\Documents\Crestlineproperties\Crestlineproperties\server\venv\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User1\Documents\Crestlineproperties\Crestlineproperties\server\venv\Lib\site-packages\django\template\response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "C:\Users\User1\Documents\Crestlineproperties\Crestlineproperties\server\venv\Lib\site-packages\django\template\response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+  File "C:\Users\User1\Documents\Crestlineproperties\Crestlineproperties\server\venv\Lib\site-packages\django\template\loader.py", line 47, in select_template
+    raise TemplateDoesNotExist(", ".join(template_name_list), chain=chain)
+django.template.exceptions.TemplateDoesNotExist: index.html
+ERROR 2025-11-13 15:29:22,012 basehttp 18644 22104 "GET /favicon.ico HTTP/1.1" 500 91865
+INFO 2025-11-13 15:29:40,456 basehttp 18644 22104 "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+INFO 2025-11-13 15:29:40,647 basehttp 18644 22104 "GET /admin/ HTTP/1.1" 200 14480
+INFO 2025-11-13 15:29:40,717 basehttp 18644 22104 "GET /static/admin/css/dashboard.css HTTP/1.1" 200 441
+INFO 2025-11-13 15:29:40,748 basehttp 18644 8072 "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+INFO 2025-11-13 15:29:40,759 basehttp 18644 22104 "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+ERROR 2025-11-13 15:29:40,969 log 18644 22104 Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "C:\Users\User1\Documents\Crestlineproperties\Crestlineproperties\server\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\User1\Documents\Crestlineproperties\Crestlineproperties\server\venv\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "C:\Users\User1\Documents\Crestlineproperties\Crestlineproperties\server\venv\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User1\Documents\Crestlineproperties\Crestlineproperties\server\venv\Lib\site-packages\django\template\response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "C:\Users\User1\Documents\Crestlineproperties\Crestlineproperties\server\venv\Lib\site-packages\django\template\response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+  File "C:\Users\User1\Documents\Crestlineproperties\Crestlineproperties\server\venv\Lib\site-packages\django\template\loader.py", line 47, in select_template
+    raise TemplateDoesNotExist(", ".join(template_name_list), chain=chain)
+django.template.exceptions.TemplateDoesNotExist: index.html
+ERROR 2025-11-13 15:29:40,973 basehttp 18644 22104 "GET /favicon.ico HTTP/1.1" 500 92009
+INFO 2025-11-13 15:29:58,522 basehttp 18644 22104 "GET /admin/properties/property/ HTTP/1.1" 200 20589
+INFO 2025-11-13 15:29:58,606 basehttp 18644 22104 "GET /static/admin/css/changelists.css HTTP/1.1" 200 6566
+INFO 2025-11-13 15:29:58,606 basehttp 18644 8072 "GET /static/admin/css/forms.css HTTP/1.1" 200 9090
+INFO 2025-11-13 15:29:58,660 basehttp 18644 8072 "GET /static/admin/js/urlify.js HTTP/1.1" 200 7887
+INFO 2025-11-13 15:29:58,703 basehttp 18644 21044 "GET /static/admin/js/jquery.init.js HTTP/1.1" 200 347
+INFO 2025-11-13 15:29:58,728 basehttp 18644 18956 "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 292458
+INFO 2025-11-13 15:29:58,742 basehttp 18644 8072 "GET /static/admin/css/widgets.css HTTP/1.1" 200 11921
+INFO 2025-11-13 15:29:58,791 basehttp 18644 22104 "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 232381
+INFO 2025-11-13 15:29:58,793 basehttp 18644 13148 "GET /static/admin/js/core.js HTTP/1.1" 200 5682
+INFO 2025-11-13 15:29:58,836 basehttp 18644 18956 "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 8943
+INFO 2025-11-13 15:29:58,837 basehttp 18644 19096 "GET /static/admin/js/actions.js HTTP/1.1" 200 7872
+INFO 2025-11-13 15:29:58,837 basehttp 18644 8072 "GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1531
+INFO 2025-11-13 15:29:58,872 basehttp 18644 22104 "GET /static/admin/img/search.svg HTTP/1.1" 200 458
+INFO 2025-11-13 15:29:58,940 basehttp 18644 22104 "GET /static/admin/js/filters.js HTTP/1.1" 200 978
+INFO 2025-11-13 15:29:59,015 basehttp 18644 21044 "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2025-11-13 15:29:59,074 basehttp 18644 21044 "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 200 331
+ERROR 2025-11-13 15:29:59,271 log 18644 21044 Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "C:\Users\User1\Documents\Crestlineproperties\Crestlineproperties\server\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\User1\Documents\Crestlineproperties\Crestlineproperties\server\venv\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "C:\Users\User1\Documents\Crestlineproperties\Crestlineproperties\server\venv\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User1\Documents\Crestlineproperties\Crestlineproperties\server\venv\Lib\site-packages\django\template\response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "C:\Users\User1\Documents\Crestlineproperties\Crestlineproperties\server\venv\Lib\site-packages\django\template\response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+  File "C:\Users\User1\Documents\Crestlineproperties\Crestlineproperties\server\venv\Lib\site-packages\django\template\loader.py", line 47, in select_template
+    raise TemplateDoesNotExist(", ".join(template_name_list), chain=chain)
+django.template.exceptions.TemplateDoesNotExist: index.html
+ERROR 2025-11-13 15:29:59,276 basehttp 18644 21044 "GET /favicon.ico HTTP/1.1" 500 92029
+INFO 2025-11-13 15:30:01,927 basehttp 18644 21044 "GET /admin/properties/property/add/ HTTP/1.1" 200 94402
+INFO 2025-11-13 15:30:01,997 basehttp 18644 22104 "GET /static/admin/css/vendor/select2/select2.css HTTP/1.1" 200 17358
+INFO 2025-11-13 15:30:01,998 basehttp 18644 19096 "GET /static/admin/css/autocomplete.css HTTP/1.1" 200 9114
+INFO 2025-11-13 15:30:02,008 basehttp 18644 8072 "GET /static/admin/js/collapse.js HTTP/1.1" 200 1803
+INFO 2025-11-13 15:30:02,039 basehttp 18644 13148 "GET /static/admin/js/vendor/select2/i18n/en.js HTTP/1.1" 200 844
+INFO 2025-11-13 15:30:02,067 basehttp 18644 19096 "GET /static/admin/js/autocomplete.js HTTP/1.1" 200 1060
+INFO 2025-11-13 15:30:02,104 basehttp 18644 22104 "GET /static/admin/img/icon-viewlink.svg HTTP/1.1" 200 581
+INFO 2025-11-13 15:30:02,134 basehttp 18644 19096 "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 200 586
+INFO 2025-11-13 15:30:02,150 basehttp 18644 18956 "GET /static/admin/js/vendor/select2/select2.full.js HTTP/1.1" 200 173566
+INFO 2025-11-13 15:30:02,158 basehttp 18644 8072 "GET /static/admin/js/inlines.js HTTP/1.1" 200 15526
+INFO 2025-11-13 15:30:02,190 basehttp 18644 8072 "GET /static/admin/img/icon-deletelink.svg HTTP/1.1" 200 392
+INFO 2025-11-13 15:30:02,210 basehttp 18644 8072 "GET /static/admin/img/icon-unknown.svg HTTP/1.1" 200 655
+INFO 2025-11-13 15:30:02,238 basehttp 18644 8072 "GET /static/admin/js/change_form.js HTTP/1.1" 200 606
+INFO 2025-11-13 15:30:02,247 basehttp 18644 21044 "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2025-11-13 15:30:02,444 basehttp 18644 21044 "GET /static/admin/img/inline-delete.svg HTTP/1.1" 200 560
+ERROR 2025-11-13 15:30:02,657 log 18644 21044 Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "C:\Users\User1\Documents\Crestlineproperties\Crestlineproperties\server\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\User1\Documents\Crestlineproperties\Crestlineproperties\server\venv\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "C:\Users\User1\Documents\Crestlineproperties\Crestlineproperties\server\venv\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User1\Documents\Crestlineproperties\Crestlineproperties\server\venv\Lib\site-packages\django\template\response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "C:\Users\User1\Documents\Crestlineproperties\Crestlineproperties\server\venv\Lib\site-packages\django\template\response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+  File "C:\Users\User1\Documents\Crestlineproperties\Crestlineproperties\server\venv\Lib\site-packages\django\template\loader.py", line 47, in select_template
+    raise TemplateDoesNotExist(", ".join(template_name_list), chain=chain)
+django.template.exceptions.TemplateDoesNotExist: index.html
+ERROR 2025-11-13 15:30:02,661 basehttp 18644 21044 "GET /favicon.ico HTTP/1.1" 500 92033
+INFO 2025-11-13 15:37:21,276 basehttp 18644 1552 "POST /admin/properties/property/add/ HTTP/1.1" 302 0
+INFO 2025-11-13 15:37:21,484 basehttp 18644 1552 "GET /admin/properties/property/ HTTP/1.1" 200 25539
+INFO 2025-11-13 15:37:21,524 basehttp 18644 1552 "GET /static/admin/css/base.css HTTP/1.1" 304 0
+INFO 2025-11-13 15:37:21,543 basehttp 18644 23752 "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 304 0
+INFO 2025-11-13 15:37:21,543 basehttp 18644 1552 "GET /static/admin/css/dark_mode.css HTTP/1.1" 304 0
+INFO 2025-11-13 15:37:21,554 basehttp 18644 23752 "GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+INFO 2025-11-13 15:37:21,587 basehttp 18644 23908 "GET /static/admin/img/icon-no.svg HTTP/1.1" 200 560
+INFO 2025-11-13 15:37:21,612 basehttp 18644 23908 "GET /static/admin/js/theme.js HTTP/1.1" 304 0
+INFO 2025-11-13 15:37:21,621 basehttp 18644 23908 "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 304 0
+INFO 2025-11-13 15:37:21,719 basehttp 18644 1552 "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2025-11-13 15:37:21,776 basehttp 18644 1552 "GET /static/admin/img/icon-yes.svg HTTP/1.1" 200 436
+INFO 2025-11-13 15:37:21,784 basehttp 18644 23908 "GET /static/admin/img/sorting-icons.svg HTTP/1.1" 200 1097
+ERROR 2025-11-13 15:37:21,981 log 18644 23908 Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "C:\Users\User1\Documents\Crestlineproperties\Crestlineproperties\server\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\User1\Documents\Crestlineproperties\Crestlineproperties\server\venv\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "C:\Users\User1\Documents\Crestlineproperties\Crestlineproperties\server\venv\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User1\Documents\Crestlineproperties\Crestlineproperties\server\venv\Lib\site-packages\django\template\response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "C:\Users\User1\Documents\Crestlineproperties\Crestlineproperties\server\venv\Lib\site-packages\django\template\response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+  File "C:\Users\User1\Documents\Crestlineproperties\Crestlineproperties\server\venv\Lib\site-packages\django\template\loader.py", line 47, in select_template
+    raise TemplateDoesNotExist(", ".join(template_name_list), chain=chain)
+django.template.exceptions.TemplateDoesNotExist: index.html
+ERROR 2025-11-13 15:37:21,986 basehttp 18644 23908 "GET /favicon.ico HTTP/1.1" 500 92029
+INFO 2025-11-13 15:37:28,586 basehttp 18644 24032 "GET /api/auth/csrf/ HTTP/1.1" 200 81
+INFO 2025-11-13 15:37:28,586 basehttp 18644 19888 "GET /api/auth/csrf/ HTTP/1.1" 200 81
+INFO 2025-11-13 15:37:28,920 basehttp 18644 4664 "OPTIONS /api/properties/?featured=true&limit=6 HTTP/1.1" 200 0
+INFO 2025-11-13 15:37:28,920 basehttp 18644 11012 "OPTIONS /api/auth/me/ HTTP/1.1" 200 0
+INFO 2025-11-13 15:37:31,482 basehttp 18644 19888 "GET /api/auth/csrf/ HTTP/1.1" 200 81
+INFO 2025-11-13 15:37:31,491 basehttp 18644 19888 "GET /api/auth/csrf/ HTTP/1.1" 200 81
+INFO 2025-11-13 15:37:31,634 basehttp 18644 11012 "OPTIONS /api/properties/?featured=true&limit=6 HTTP/1.1" 200 0
+INFO 2025-11-13 15:37:31,634 basehttp 18644 4664 "OPTIONS /api/auth/me/ HTTP/1.1" 200 0
+INFO 2025-11-13 15:37:45,662 basehttp 18644 10060 "GET /api/auth/me/ HTTP/1.1" 200 32
+INFO 2025-11-13 15:37:46,346 basehttp 18644 8904 "GET /api/properties/?featured=true&limit=6 HTTP/1.1" 200 1421
+INFO 2025-11-13 15:37:46,433 basehttp 18644 8904 "GET /media/property_images/2025/11/13/istockphoto-496704973-612x612.jpg HTTP/1.1" 200 66739
+INFO 2025-11-13 15:38:41,192 basehttp 18644 15456 "OPTIONS /api/properties/1/ HTTP/1.1" 200 0
+INFO 2025-11-13 15:38:41,395 basehttp 18644 8904 "GET /api/properties/1/ HTTP/1.1" 200 2752
+INFO 2025-11-13 15:38:41,403 basehttp 18644 15456 "OPTIONS /api/properties/1/increment-views/ HTTP/1.1" 200 0
+INFO 2025-11-13 15:38:41,585 basehttp 18644 8904 "GET /api/properties/1/increment-views/ HTTP/1.1" 200 17
+INFO 2025-11-13 15:38:52,577 basehttp 18644 8904 "GET /api/properties/?property_type=rental&status=published HTTP/1.1" 200 52
+INFO 2025-11-13 15:38:54,508 basehttp 18644 8904 "GET /api/properties/? HTTP/1.1" 200 1421
+INFO 2025-11-13 15:38:54,541 basehttp 18644 8904 "GET /media/property_images/2025/11/13/istockphoto-496704973-612x612.jpg HTTP/1.1" 304 0
+INFO 2025-11-13 15:38:55,757 basehttp 18644 8904 "GET /api/properties/?featured=true&limit=6 HTTP/1.1" 200 1421
+INFO 2025-11-13 15:39:34,449 basehttp 18644 19888 "GET /api/auth/csrf/ HTTP/1.1" 200 81
+INFO 2025-11-13 15:39:34,565 basehttp 18644 4664 "OPTIONS /api/properties/?featured=true&limit=6 HTTP/1.1" 200 0
+INFO 2025-11-13 15:39:35,169 basehttp 18644 8904 "GET /api/properties/?featured=true&limit=6 HTTP/1.1" 200 1421
+INFO 2025-11-13 15:41:22,726 basehttp 18644 8904 "GET /api/properties/?featured=true&limit=6 HTTP/1.1" 200 1421
+INFO 2025-11-13 15:43:43,466 basehttp 18644 8904 "GET /api/properties/?featured=true&limit=6 HTTP/1.1" 200 1421
+INFO 2025-11-13 15:43:44,036 basehttp 18644 8904 "GET /api/properties/?featured=true&limit=6 HTTP/1.1" 200 1421
+INFO 2025-11-13 15:44:04,567 basehttp 18644 8904 "GET /api/properties/?featured=true&limit=6 HTTP/1.1" 200 1421
+INFO 2025-11-13 15:46:17,830 basehttp 18644 8904 "GET /api/properties/?featured=true&limit=6 HTTP/1.1" 200 1421
+INFO 2025-11-13 15:46:18,569 basehttp 18644 8904 "GET /media/property_images/2025/11/13/istockphoto-496704973-612x612.jpg HTTP/1.1" 304 0
+INFO 2025-11-13 15:48:03,263 basehttp 18644 8904 "GET /api/properties/?featured=true&limit=6 HTTP/1.1" 200 1421
+INFO 2025-11-13 15:48:03,405 basehttp 18644 8904 "GET /media/property_images/2025/11/13/istockphoto-496704973-612x612.jpg HTTP/1.1" 304 0
+INFO 2025-11-13 16:07:25,963 basehttp 18644 20260 "GET /api/auth/me/ HTTP/1.1" 200 32
+INFO 2025-11-13 16:07:26,371 basehttp 18644 23696 "GET /api/properties/?featured=true&limit=6 HTTP/1.1" 200 1421
+INFO 2025-11-13 16:07:26,490 basehttp 18644 23696 "GET /media/property_images/2025/11/13/istockphoto-496704973-612x612.jpg HTTP/1.1" 304 0
+INFO 2025-11-13 16:07:38,130 basehttp 18644 25060 "OPTIONS /api/auth/me/ HTTP/1.1" 200 0
+INFO 2025-11-13 16:07:38,131 basehttp 18644 13940 "OPTIONS /api/properties/?featured=true&limit=6 HTTP/1.1" 200 0
+INFO 2025-11-13 16:07:38,174 basehttp 18644 23696 "GET /api/auth/me/ HTTP/1.1" 200 32
+INFO 2025-11-13 16:07:38,442 basehttp 18644 20260 "GET /api/properties/?featured=true&limit=6 HTTP/1.1" 200 1421
+INFO 2025-11-13 16:08:53,266 basehttp 18644 20260 "GET /api/properties/?featured=true&limit=6 HTTP/1.1" 200 1421
+INFO 2025-11-13 16:10:05,184 basehttp 18644 13940 "OPTIONS /api/properties/?featured=true&limit=6 HTTP/1.1" 200 0
+INFO 2025-11-13 16:10:05,184 basehttp 18644 25060 "OPTIONS /api/auth/me/ HTTP/1.1" 200 0
+INFO 2025-11-13 16:10:05,219 basehttp 18644 23696 "GET /api/auth/me/ HTTP/1.1" 200 32
+INFO 2025-11-13 16:10:05,642 basehttp 18644 20260 "GET /api/properties/?featured=true&limit=6 HTTP/1.1" 200 1421
+INFO 2025-11-13 16:10:27,845 basehttp 18644 20260 "GET /api/properties/?featured=true&limit=6 HTTP/1.1" 200 1421
+INFO 2025-11-13 16:13:50,958 basehttp 18644 20260 "GET /api/properties/?featured=true&limit=6 HTTP/1.1" 200 1421
+INFO 2025-11-13 16:14:04,368 basehttp 18644 20260 "GET /api/properties/?featured=true&limit=6 HTTP/1.1" 200 1421
+INFO 2025-11-13 16:14:15,320 basehttp 18644 20260 "GET /api/properties/?featured=true&limit=6 HTTP/1.1" 200 1421
+INFO 2025-11-13 16:14:16,727 basehttp 18644 20260 "GET /api/properties/?featured=true&limit=6 HTTP/1.1" 200 1421
+INFO 2025-11-13 16:14:23,524 basehttp 18644 20260 "GET /api/properties/?featured=true&limit=6 HTTP/1.1" 200 1421
+INFO 2025-11-13 16:16:05,868 basehttp 18644 20260 "GET /api/properties/? HTTP/1.1" 200 1421
+INFO 2025-11-13 16:16:05,899 basehttp 18644 20260 "GET /media/property_images/2025/11/13/istockphoto-496704973-612x612.jpg HTTP/1.1" 304 0
+INFO 2025-11-13 16:16:07,220 basehttp 18644 20260 "GET /api/properties/?property_type=rental&status=published HTTP/1.1" 200 52
+INFO 2025-11-13 16:16:11,050 basehttp 18644 20260 "GET /api/properties/?featured=true&limit=6 HTTP/1.1" 200 1421
+INFO 2025-11-13 16:24:22,319 basehttp 18644 25048 "GET /api/auth/me/ HTTP/1.1" 200 32
+INFO 2025-11-13 16:24:22,694 basehttp 18644 10176 "GET /api/properties/?featured=true&limit=6 HTTP/1.1" 200 1421
+INFO 2025-11-13 16:24:22,812 basehttp 18644 10176 "GET /media/property_images/2025/11/13/istockphoto-496704973-612x612.jpg HTTP/1.1" 304 0
+INFO 2025-11-13 16:26:38,427 basehttp 18644 25048 "GET /api/auth/me/ HTTP/1.1" 200 32
+INFO 2025-11-13 16:26:38,746 basehttp 18644 10176 "GET /api/properties/?featured=true&limit=6 HTTP/1.1" 200 1421
+INFO 2025-11-13 16:26:56,642 basehttp 18644 10176 "GET /api/properties/? HTTP/1.1" 200 1421
+INFO 2025-11-13 16:27:00,699 basehttp 18644 10176 "GET /api/properties/?property_type=rental&status=published HTTP/1.1" 200 52
+INFO 2025-11-13 16:27:15,565 basehttp 18644 10176 "GET /api/properties/?featured=true&limit=6 HTTP/1.1" 200 1421
+INFO 2025-11-13 16:28:02,867 basehttp 18644 10176 "GET /api/properties/? HTTP/1.1" 200 1421
+INFO 2025-11-13 16:28:13,876 basehttp 18644 10176 "GET /api/properties/?featured=true&limit=6 HTTP/1.1" 200 1421
+INFO 2025-11-13 16:36:00,003 basehttp 18644 21064 "GET /api/auth/me/ HTTP/1.1" 200 32
+INFO 2025-11-13 16:36:00,100 basehttp 18644 21064 "GET /api/auth/me/ HTTP/1.1" 200 32
+INFO 2025-11-13 16:36:00,465 basehttp 18644 24292 "GET /api/properties/?featured=true&limit=6 HTTP/1.1" 200 1421
+INFO 2025-11-13 16:36:00,524 basehttp 18644 21064 "GET /media/property_images/2025/11/13/istockphoto-496704973-612x612.jpg HTTP/1.1" 304 0
+INFO 2025-11-13 16:36:00,823 basehttp 18644 24292 "GET /api/properties/?featured=true&limit=6 HTTP/1.1" 200 1421
+INFO 2025-11-13 16:36:00,936 basehttp 18644 24292 "GET /media/property_images/2025/11/13/istockphoto-496704973-612x612.jpg HTTP/1.1" 304 0
+INFO 2025-11-13 16:36:40,226 basehttp 18644 21064 "GET /api/auth/me/ HTTP/1.1" 200 32
+INFO 2025-11-13 16:36:40,431 basehttp 18644 24292 "GET /api/properties/?featured=true&limit=6 HTTP/1.1" 200 1421
+INFO 2025-11-13 16:36:40,563 basehttp 18644 21064 "GET /api/auth/me/ HTTP/1.1" 200 32
+INFO 2025-11-13 16:36:40,780 basehttp 18644 24292 "GET /api/properties/?featured=true&limit=6 HTTP/1.1" 200 1421
+INFO 2025-11-13 17:31:54,757 autoreload 18644 12156 C:\Users\User1\Documents\Crestlineproperties\Crestlineproperties\server\pristineprimer\settings.py changed, reloading.
+INFO 2025-11-13 17:32:01,527 autoreload 20280 23188 Watching for file changes with StatReloader
+INFO 2025-11-13 17:32:31,413 autoreload 20280 23188 C:\Users\User1\Documents\Crestlineproperties\Crestlineproperties\server\pristineprimer\settings.py changed, reloading.
+INFO 2025-11-13 17:32:34,111 autoreload 25380 20452 Watching for file changes with StatReloader
+INFO 2025-11-13 17:33:01,777 autoreload 25380 20452 C:\Users\User1\Documents\Crestlineproperties\Crestlineproperties\server\pristineprimer\settings.py changed, reloading.
+INFO 2025-11-13 17:33:03,923 autoreload 20148 2972 Watching for file changes with StatReloader
+INFO 2025-11-13 17:33:20,482 autoreload 20148 2972 C:\Users\User1\Documents\Crestlineproperties\Crestlineproperties\server\pristineprimer\settings.py changed, reloading.
+INFO 2025-11-13 17:33:22,657 autoreload 17412 17544 Watching for file changes with StatReloader
+INFO 2025-11-13 17:33:38,664 autoreload 17412 17544 C:\Users\User1\Documents\Crestlineproperties\Crestlineproperties\server\pristineprimer\settings.py changed, reloading.
+INFO 2025-11-13 17:33:40,818 autoreload 21628 13008 Watching for file changes with StatReloader
+INFO 2025-11-13 17:33:52,546 autoreload 21628 13008 C:\Users\User1\Documents\Crestlineproperties\Crestlineproperties\server\pristineprimer\settings.py changed, reloading.
+INFO 2025-11-13 17:33:54,670 autoreload 17756 23496 Watching for file changes with StatReloader
+INFO 2025-11-13 17:34:24,747 autoreload 17756 23496 C:\Users\User1\Documents\Crestlineproperties\Crestlineproperties\server\pristineprimer\settings.py changed, reloading.

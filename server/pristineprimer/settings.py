@@ -18,19 +18,13 @@ DEBUG = True  # Set to False in production
 
 ALLOWED_HOSTS = [
     "localhost",
-    "127.0.0.1",
-    "18.217.243.193",
-    "pristineprimier.co.ke",
-    "www.pristineprimier.com",
-    'api.pristineprimier.com',
-    "main.d35ciakzcz3l11.amplifyapp.com",
-    "www.pristineprimier.co.ke",
-    "pristineprimier.com",
-    "http://localhost:8081",
-    "3.22.222.35",
+    "127.0.0.1", 
+    "crestlineproperties.co.ke",
+    "www.crestlineproperties.co.ke",
+    "api.crestlineproperties.co.ke",
+    "3.22.222.35", 
     "172.31.47.183",
 ]
-
 # ---------------------------
 # APPLICATIONS
 # ---------------------------
@@ -112,6 +106,16 @@ DATABASES = {
     }
 }
 
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': os.getenv('DB_NAME', 'Crestlinepropertiesdb'),
+        'USER': os.getenv('DB_USER', 'postgres'),
+        'PASSWORD': os.getenv('DB_PASSWORD', 'Chrispine9909'),
+        'HOST': os.getenv('DB_HOST', 'localhost'),
+        'PORT': os.getenv('DB_PORT', '5434'), 
+    }
+}
 
 
 
@@ -187,37 +191,25 @@ REST_FRAMEWORK = {
 # ---------------------------
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:3000",
-    "http://127.0.0.1:3000",
-    "http://localhost:8080",
-    "http://127.0.0.1:8080",
-    "http://localhost:5173",  
-    "https://main.d35ciakzcz3l11.amplifyapp.com",
-    "https://pristineprimier.co.ke",
-    "https://www.pristineprimier.com",
-    "https://api.pristineprimier.com",
-    "https://pristineprimier.com",
-    "http://localhost:8081",
-    "https://www.pristineprimier.co.ke", 
-    "http://3.22.222.35",
-    "https://3.22.222.35",
-    
+    "http://127.0.0.1:3000", 
+    "https://crestlineproperties.co.ke",
+    "https://www.crestlineproperties.co.ke",
+    "https://api.crestlineproperties.co.ke",
 ]
 
 CORS_ALLOW_CREDENTIALS = True
 
 CSRF_TRUSTED_ORIGINS = [
-    "https://www.pristineprimier.com",
-    "https://pristineprimier.com",
-    "https://api.pristineprimier.com",
-    "https://main.d35ciakzcz3l11.amplifyapp.com",
-    "https://pristineprimier.co.ke",
-    "https://www.pristineprimier.co.ke",
-    "http://localhost:8081",
-    "http://3.22.222.35",
-    "https://3.22.222.35",
+    "https://crestlineproperties.co.ke",
+    "https://www.crestlineproperties.co.ke", 
+    "https://api.crestlineproperties.co.ke",
 ]
 
+CSRF_COOKIE_DOMAIN = '.crestlineproperties.co.ke'
 
+DEFAULT_FROM_EMAIL = 'Crestline Properties <info@crestlineproperties.co.ke>'
+NEWSLETTER_FROM_EMAIL = 'newsletter@crestlineproperties.co.ke'
+ 
 CORS_ALLOW_HEADERS = [
     'accept',
     'accept-encoding',
