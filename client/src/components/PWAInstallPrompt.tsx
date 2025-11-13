@@ -96,7 +96,7 @@ const PWAInstallPrompt = () => {
       console.log('📱 Showing manual installation instructions');
       
       if (/android/i.test(navigator.userAgent)) {
-        alert(`To install PristinePrimier:
+        alert(`To install Crestlineproperties:
         
 1. Tap the 3-dots menu (⋮) in Chrome
 2. Select "Install app" or "Add to Home screen"  
@@ -113,9 +113,9 @@ Your app will open like a native application!`);
 Your app will open like a native application!`);
       } else {
         // Look for install icon in browser UI
-        alert(`PristinePrimier can be installed!
+        alert(`Crestlineproperties can be installed!
         
-Look for the install icon in your browser's address bar, or check the browser menu for "Install PristinePrimier".`);
+Look for the install icon in your browser's address bar, or check the browser menu for "Install Crestlineproperties".`);
       }
     }
     
@@ -140,7 +140,7 @@ Look for the install icon in your browser's address bar, or check the browser me
         </div>
         
         <div className="flex-1">
-          <h3 className="font-semibold text-sm mb-1">Install PristinePrimier</h3>
+          <h3 className="font-semibold text-sm mb-1">Install Crestlineproperties</h3>
           <p className="text-xs text-gray-600 mb-3">
             Install our app for a better experience and quick access to properties.
           </p>

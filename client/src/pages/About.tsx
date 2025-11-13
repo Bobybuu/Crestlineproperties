@@ -38,7 +38,7 @@ const About = (): JSX.Element => {
 
   const team = [
     {
-      name: 'Mike Muthuri',
+      name: 'Larry Gatai Kimani',
       role: 'Founder & CEO',
       experience: '10+ years in real estate',
       specialty: 'Luxury Properties & Commercial'
@@ -54,7 +54,7 @@ const About = (): JSX.Element => {
         <section className="gradient-hero text-primary-foreground py-1">
           <div className="container mx-auto px-4 text-center">
             <h1 className="text-center mb-2 font-light text-3xl tracking-tight">
-              About PristinePrimier Real Estate
+              About Crestlineproperties Real Estate
             </h1>
             <p className="mb-4 max-w-2xl mx-auto text-primary-foreground/90">
               Your Trusted Partner in Kenya's Real Estate Journey Since 2015
@@ -80,7 +80,7 @@ const About = (): JSX.Element => {
               <div>
                 <h2 className="mb-6 font-medium">Our Story</h2>
                 <p className="text-muted-foreground text-lg mb-6">
-                  Founded in 2015, PristinePrimier Real Estate began with a simple vision: to transform 
+                  Founded in 2015, Crestlineproperties Real Estate began with a simple vision: to transform 
                   the real estate experience in Kenya by providing trustworthy, professional, and 
                   comprehensive property services.
                 </p>
@@ -203,7 +203,7 @@ const About = (): JSX.Element => {
         <section className="py-16">
           <div className="container mx-auto px-4">
             <div className="text-center mb-12">
-              <h2 className="text-center mb-2 font-light text-3xl tracking-tight">Why Choose PristinePrimier?</h2>
+              <h2 className="text-center mb-2 font-light text-3xl tracking-tight">Why Choose Crestlineproperties?</h2>
             </div>
 
             <div className="max-w-4xl mx-auto">

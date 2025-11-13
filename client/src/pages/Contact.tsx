@@ -16,27 +16,27 @@ const Contact = (): JSX.Element => {
       icon: Phone,
       title: 'Call Us',
       description: 'For immediate assistance and inquiries',
-      details: '+254 743 012 966',
+      details: '+254710899700',
       action: 'Call Now',
-      link: 'tel:+254743012966',
+      link: 'tel:+254710899700',
       color: 'text-green-600'
     },
     {
       icon: FaWhatsapp,
       title: 'WhatsApp',
       description: 'Quick chat and instant messaging',
-      details: '+254 743 012 966',
+      details: '+254 710 899 700',
       action: 'Message on WhatsApp',
-      link: 'https://wa.me/+254743012966?text=Hello%20I%20am%20interested%20in%20your%20services',
+      link: 'https://wa.me/+254710899700?text=Hello%20I%20am%20interested%20in%20your%20services',
       color: 'text-green-500'
     },
     {
       icon: Mail,
       title: 'Email Us',
       description: 'For detailed inquiries and documentation',
-      details: 'info@pristineprimer.com',
+      details: 'crestlineproperties01@gmail.com',
       action: 'Send Email',
-      link: 'mailto:info@pristineprimier.com',
+      link: 'mailto:crestlineproperties01@gmail.com',
       color: 'text-blue-600'
     },
     {
@@ -54,25 +54,25 @@ const Contact = (): JSX.Element => {
     {
       icon: FaFacebook,
       name: 'Facebook',
-      url: 'https://facebook.com/pristineprimer',
+      url: '#',
       color: 'text-blue-600'
     },
     {
       icon: FaTwitter,
       name: 'Twitter',
-      url: 'https://twitter.com/pristineprimer',
+      url: 'https://twitter.com/crestlineproperties',
       color: 'text-blue-400'
     },
     {
       icon: FaInstagram,
       name: 'Instagram',
-      url: 'https://instagram.com/pristineprimer',
+      url: 'https://instagram.com/crestlineproperties',
       color: 'text-pink-600'
     },
     {
       icon: FaWhatsapp,
       name: 'WhatsApp',
-      url: 'https://wa.me/+254743012966',
+      url: 'https://wa.me/+254710899700',
       color: 'text-green-500'
     }
   ];
@@ -108,7 +108,7 @@ const Contact = (): JSX.Element => {
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-2">
               <div className="flex items-center gap-2 bg-white/20 px-4 py-2 rounded-lg">
                 <Phone className="h-5 w-5" />
-                <span className="font-semibold">+254 743 012 966</span>
+                <span className="font-semibold">+254 710 899 700</span>
               </div>
               <p className="text-primary-foreground/80">
                 Call now for immediate response
@@ -184,10 +184,10 @@ const Contact = (): JSX.Element => {
                       </div>
                       <h3 className="text-xl font-medium mb-3 text-green-800">Message Sent Successfully!</h3>
                       <p className="text-green-700 mb-4">
-                        Thank you for contacting PristinePrimer Real Estate. We'll get back to you within 2 hours.
+                        Thank you for contacting Crestlineproperties Real Estate. We'll get back to you within 2 hours.
                       </p>
                       <p className="text-green-600 text-sm mb-6">
-                        For urgent matters, please call us directly at <strong>+254 743 012 966</strong>
+                        For urgent matters, please call us directly at <strong>+254 710 899 700</strong>
                       </p>
                       <div className="flex gap-4 justify-center">
                         <Button asChild variant="outline">
@@ -315,9 +315,9 @@ const Contact = (): JSX.Element => {
                   size="lg"
                   className="bg-green-600 hover:bg-green-700 text-white"
                 >
-                  <a href="tel:+254743012966">
+                  <a href="tel:+254710899700">
                     <Phone className="h-5 w-5 mr-2" />
-                    Call +254 743 012 966
+                    Call +254 710 899 700 Now
                   </a>
                 </Button>
                 <Button 
@@ -326,7 +326,7 @@ const Contact = (): JSX.Element => {
                   size="lg"
                   className="bg-transparent border-2 border-accent-foreground text-accent-foreground hover:bg-accent-foreground hover:text-accent"
                 >
-                  <a href="https://wa.me/+254743012966" target="_blank" rel="noopener noreferrer">
+                  <a href="https://wa.me/+254710899700" target="_blank" rel="noopener noreferrer">
                     <FaWhatsapp className="h-5 w-5 mr-2" />
                     WhatsApp Now
                   </a>

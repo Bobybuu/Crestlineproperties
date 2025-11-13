@@ -15,7 +15,7 @@ const Privacy = (): JSX.Element => {
       id: 'introduction',
       title: 'Introduction & Scope',
       icon: Shield,
-      content: 'PristinePrimer Real Estate is committed to protecting your privacy and personal information in compliance with Kenyan Data Protection Act, 2019.'
+      content: 'Crestlineproperties Real Estate is committed to protecting your privacy and personal information in compliance with Kenyan Data Protection Act, 2019.'
     },
     {
       id: 'information-collection',

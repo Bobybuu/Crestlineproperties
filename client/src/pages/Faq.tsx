@@ -25,7 +25,7 @@ const Faq = (): JSX.Element => {
       questions: [
         {
           question: 'How do I schedule a site visit?',
-          answer: 'You can schedule a site visit by calling us at +254 743 012 966, using the WhatsApp button on our website, or by filling out the contact form. We typically schedule visits within 24-48 hours and will accompany you to the property.'
+          answer: 'You can schedule a site visit by calling us at +254 710 899 700, using the WhatsApp button on our website, or by filling out the contact form. We typically schedule visits within 24-48 hours and will accompany you to the property.'
         },
         {
           question: 'What documents do I need to buy a property?',

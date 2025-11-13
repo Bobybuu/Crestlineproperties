@@ -17,7 +17,6 @@ const Header = () => {
     { path: '/rent', label: 'Rent Property' },
     { path: '/sell', label: 'Sell a House' },
     { path: '/manage', label: 'Manage Property' },
-    { path: '/services', label: 'Services' },
     { path: '/about', label: 'About Us' },
   ];
 
@@ -72,7 +71,7 @@ const Header = () => {
             <img 
               src="/logorealestate.png"  
               alt="PristinePrimier Real Estate" 
-              className="h-8 w-auto"
+              className="h-16 w-auto"
             />
           </Link>
 

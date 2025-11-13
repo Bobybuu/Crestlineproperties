@@ -70,7 +70,7 @@ const handleNewsletterSubmit = async (e: React.FormEvent) => {
         <div>
           <Link to="/" className="flex items-center gap-2 mb-4">
             
-            <span className="text-2xl font-bold text-primary-700">PristinePrimier</span>
+            <span className="text-2xl font-bold text-primary-700">Crestlineproperties</span>
           </Link>
           <p className="mt-4 text-gray-600 text-sm">
             Helping you buy, sell, or rent your next property in Kenya.
@@ -83,15 +83,15 @@ const handleNewsletterSubmit = async (e: React.FormEvent) => {
             <p className="flex items-center gap-2">
               <Phone className="h-4 w-4" />
               <strong>Phone:</strong>{' '}
-              <a href="tel:+254729407573" className="hover:underline">
-                +254 729407573
+              <a href="tel:+254710899700" className="hover:underline">
+                +254 710899700
               </a>
             </p>
             <p className="flex items-center gap-2">
               <Mail className="h-4 w-4" />
               <strong>Email:</strong>{' '}
-              <a href="mailto:info@pristineprimier.co.ke" className="hover:underline">
-                info@pristineprimier.co.ke
+              <a href="mailto:crestlineproperties01@gmail.com" className="hover:underline">
+                crestlineproperties01@gmail.com
               </a>
             </p>
           </div>
@@ -220,7 +220,7 @@ const handleNewsletterSubmit = async (e: React.FormEvent) => {
 
       {/* Copyright Section */}
       <div className="mt-12 text-center text-sm text-gray-500">
-        <p>© {new Date().getFullYear()} PristinePrimier. All rights reserved.</p>
+        <p>© {new Date().getFullYear()} Crestlineproperties. All rights reserved.</p>
         <p className="mt-1">
           Made by{' '}
           <a

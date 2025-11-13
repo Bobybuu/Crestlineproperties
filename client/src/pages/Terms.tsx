@@ -15,7 +15,7 @@ const Terms = (): JSX.Element => {
       id: 'introduction',
       title: 'Introduction & Acceptance',
       icon: FileText,
-      content: 'Welcome to PristinePrimier Real Estate. By using our platform, you agree to these Terms and Conditions governing our real estate services in Kenya.'
+      content: 'Welcome to Crestlineproperties Real Estate. By using our platform, you agree to these Terms and Conditions governing our real estate services in Kenya.'
     },
     {
       id: 'user-obligations',
