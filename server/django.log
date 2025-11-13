@@ -2340,3 +2340,4 @@ INFO 2025-11-13 17:33:40,818 autoreload 21628 13008 Watching for file changes wi
 INFO 2025-11-13 17:33:52,546 autoreload 21628 13008 C:\Users\User1\Documents\Crestlineproperties\Crestlineproperties\server\pristineprimer\settings.py changed, reloading.
 INFO 2025-11-13 17:33:54,670 autoreload 17756 23496 Watching for file changes with StatReloader
 INFO 2025-11-13 17:34:24,747 autoreload 17756 23496 C:\Users\User1\Documents\Crestlineproperties\Crestlineproperties\server\pristineprimer\settings.py changed, reloading.
+INFO 2025-11-13 17:34:26,612 autoreload 5704 18980 Watching for file changes with StatReloader
