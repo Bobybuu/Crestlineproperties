@@ -70,7 +70,7 @@ const Header = () => {
             onClick={() => setMobileMenuOpen(false)}
           >
             <img 
-              src="/favicon-96x96.png"  
+              src="/logorealestate.png"  
               alt="Crestlineproperties" 
               className="h-16 w-auto"
             />
