@@ -266,7 +266,7 @@ const About = (): JSX.Element => {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button 
                 asChild 
-                className="bg-[#f77f77] hover:bg-[#f77f77]/90 text-white border border-[#f77f77]"
+                className="bg-[#8E9EF8FF] hover:bg-[#6849F0FF]/90 text-white border border-[#a2a1eb]"
               >
                 <Link to="/buy">Browse Properties</Link>
               </Button>

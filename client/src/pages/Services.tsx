@@ -47,7 +47,7 @@ const Services = () => {
                         <div className="text-5xl mb-4">{service.icon}</div>
                         <h2 className="text-2xl font-medium mb-3">{service.title}</h2>
                         <p className="text-muted-foreground mb-4">{service.description}</p>
-                        <Button className="bg-[#f77f77] hover:bg-[#f77f77]/90 text-white" size="sm">
+                        <Button className="bg-[#8E9EF8FF] hover:bg-[#6849F0FF]/90 text-white" size="sm">
                           Learn More & Request Service
                         </Button>
                       </CardContent>

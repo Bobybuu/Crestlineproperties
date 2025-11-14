@@ -90,7 +90,7 @@ const Manage = () => {
               Maximize rental income and minimize stress with our comprehensive management services
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button className="bg-[#f77f77] hover:bg-[#f77f77]/90 text-white">
+              <Button className="bg-[#8E9EF8FF] hover:bg-[#6849F0FF]/90 text-white">
                 <a href="#request">Request Service</a>
               </Button>
               <Button className="bg-[#1f1e1d] hover:bg-[#1f1e1d]/90 text-white">
