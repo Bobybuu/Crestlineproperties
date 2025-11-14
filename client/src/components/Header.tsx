@@ -17,6 +17,7 @@ const Header = () => {
     { path: '/rent', label: 'Rent Property' },
     { path: '/sell', label: 'Sell a House' },
     { path: '/manage', label: 'Manage Property' },
+    { path: '/services', label: 'Services' },
     { path: '/about', label: 'About Us' },
   ];
 
@@ -57,7 +58,7 @@ const Header = () => {
   };
 
   return (
-    <header className="sticky top-0 z-50 w-full border-b border-white/20 bg-black backdrop-blur supports-[backdrop-filter]:bg-black/80 shadow-sm">
+    <header className="sticky top-0 z-50 w-full border-b bg-white backdrop-blur supports-[backdrop-filter]:bg-white/95 shadow-sm">
       {/* Top Bar - Logo, Phone, Menu */}
       <nav className="container mx-auto px-4">
         {/* Main Header Row */}
@@ -70,13 +71,21 @@ const Header = () => {
           >
             <img 
               src="/logorealestate.png"  
-              alt="PristinePrimier Real Estate" 
+              alt="Golden Years Realty" 
               className="h-16 w-auto"
             />
           </Link>
 
           {/* Desktop - Phone Number (Center) */}
-          
+          <div className="hidden lg:flex items-center gap-2">
+            <div className="bg-gray-100 rounded-full p-2">
+              <Phone className="h-4 w-4 text-gray-700" />
+            </div>
+            <div className="text-gray-800">
+              <div className="text-xs font-medium opacity-90">Talk to us</div>
+              <div className="text-sm font-semibold">+254 735 216000</div>
+            </div>
+          </div>
 
           {/* Desktop Navigation & Auth */}
           <div className="hidden lg:flex items-center gap-6">
@@ -88,8 +97,8 @@ const Header = () => {
                   to={link.path}
                   className={`text-sm font-medium transition-base ${
                     isActive(link.path)
-                      ? 'text-white border-b-2 border-white font-semibold'
-                      : 'text-white/80 hover:text-white hover:border-b-2 hover:border-white/50'
+                      ? 'text-gray-900 border-b-2 border-gray-900 font-semibold'
+                      : 'text-gray-600 hover:text-gray-900 hover:border-b-2 hover:border-gray-400'
                   }`}
                 >
                   {link.label}
@@ -101,10 +110,10 @@ const Header = () => {
             <div className="flex items-center gap-3 ml-4">
               {user ? (
                 <>
-                  <span className="text-sm text-white/80">
+                  <span className="text-sm text-gray-600">
                     Welcome, {getUserDisplayName()}
                   </span>
-                  <Button asChild variant="outline" size="sm" className="border-white text-white hover:bg-white hover:text-black">
+                  <Button asChild variant="outline" size="sm" className="border-gray-600 text-gray-700 hover:bg-gray-600 hover:text-white">
                     <Link to={getDashboardPath()}>
                       <User className="h-4 w-4 mr-2" />
                       Dashboard
@@ -114,7 +123,7 @@ const Header = () => {
                     variant="ghost" 
                     size="sm" 
                     onClick={handleLogout}
-                    className="text-white/80 hover:text-white hover:bg-white/10"
+                    className="text-gray-600 hover:text-gray-900 hover:bg-gray-100"
                   >
                     <LogOut className="h-4 w-4 mr-2" />
                     Logout
@@ -122,10 +131,10 @@ const Header = () => {
                 </>
               ) : (
                 <>
-                  <Button asChild variant="ghost" size="sm" className="text-white/80 hover:text-white hover:bg-white/10">
+                  <Button asChild variant="ghost" size="sm" className="text-gray-600 hover:text-gray-900 hover:bg-gray-100">
                     <Link to="/auth">Login</Link>
                   </Button>
-                  <Button asChild variant="outline" size="sm" className="border-white text-white hover:bg-white hover:text-black">
+                  <Button asChild variant="outline" size="sm" className="border-gray-600 text-gray-700 hover:bg-gray-600 hover:text-white">
                     <Link to="/auth">Sign Up</Link>
                   </Button>
                 </>
@@ -135,7 +144,7 @@ const Header = () => {
 
           {/* Mobile Menu Button */}
           <button
-            className="lg:hidden text-white"
+            className="lg:hidden text-gray-700"
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             aria-label="Toggle menu"
           >
@@ -155,7 +164,7 @@ const Header = () => {
               variant="outline"
               size="sm"
               onClick={() => setSearchExpanded(!searchExpanded)}
-              className="border-white/20 text-white hover:bg-white/10 hover:text-white flex-1 justify-start"
+              className="border-gray-300 text-gray-700 hover:bg-gray-100 hover:text-gray-900 flex-1 justify-start"
             >
               <span>Search properties...</span>
             </Button>
@@ -172,16 +181,16 @@ const Header = () => {
 
       {/* Mobile Menu */}
       {mobileMenuOpen && (
-        <div className="lg:hidden border-t border-white/20 bg-black animate-fade-in">
+        <div className="lg:hidden border-t border-gray-200 bg-white animate-fade-in">
           <div className="container mx-auto px-4 py-4 flex flex-col gap-4">
             {/* Mobile Phone Number - Only in mobile menu */}
-            <div className="flex items-center gap-2 pb-3 border-b border-white/20">
-              <div className="bg-white/10 rounded-full p-2">
-                <Phone className="h-4 w-4 text-white" />
+            <div className="flex items-center gap-2 pb-3 border-b border-gray-200">
+              <div className="bg-gray-100 rounded-full p-2">
+                <Phone className="h-4 w-4 text-gray-700" />
               </div>
-              <div className="text-white">
+              <div className="text-gray-800">
                 <div className="text-xs font-medium opacity-90">Talk to us</div>
-                <div className="text-sm font-semibold">+254710899700</div>
+                <div className="text-sm font-semibold">+254 710899700</div>
               </div>
             </div>
 
@@ -191,7 +200,7 @@ const Header = () => {
                 key={link.path}
                 to={link.path}
                 className={`text-sm font-medium py-2 transition-base ${
-                  isActive(link.path) ? 'text-white font-semibold border-l-2 border-white pl-2' : 'text-white/80 hover:text-white'
+                  isActive(link.path) ? 'text-gray-900 font-semibold border-l-2 border-gray-900 pl-2' : 'text-gray-600 hover:text-gray-900'
                 }`}
                 onClick={() => setMobileMenuOpen(false)}
               >
@@ -200,13 +209,13 @@ const Header = () => {
             ))}
             
             {/* Mobile Auth Buttons */}
-            <div className="flex flex-col gap-2 pt-4 border-t border-white/20">
+            <div className="flex flex-col gap-2 pt-4 border-t border-gray-200">
               {user ? (
                 <>
-                  <div className="text-sm text-white/80 text-center py-2">
+                  <div className="text-sm text-gray-600 text-center py-2">
                     Welcome, {getUserDisplayName()}
                   </div>
-                  <Button asChild variant="outline" size="sm" className="border-white text-white hover:bg-white hover:text-black">
+                  <Button asChild variant="outline" size="sm" className="border-gray-600 text-gray-700 hover:bg-gray-600 hover:text-white">
                     <Link to={getDashboardPath()} onClick={() => setMobileMenuOpen(false)}>
                       <User className="h-4 w-4 mr-2" />
                       Dashboard
@@ -216,7 +225,7 @@ const Header = () => {
                     variant="ghost" 
                     size="sm" 
                     onClick={handleLogout}
-                    className="text-white/80 hover:text-white hover:bg-white/10"
+                    className="text-gray-600 hover:text-gray-900 hover:bg-gray-100"
                   >
                     <LogOut className="h-4 w-4 mr-2" />
                     Logout
@@ -224,12 +233,12 @@ const Header = () => {
                 </>
               ) : (
                 <>
-                  <Button asChild variant="ghost" size="sm" className="text-white/80 hover:text-white hover:bg-white/10">
+                  <Button asChild variant="ghost" size="sm" className="text-gray-600 hover:text-gray-900 hover:bg-gray-100">
                     <Link to="/auth" onClick={() => setMobileMenuOpen(false)}>
                       Login
                     </Link>
                   </Button>
-                  <Button asChild variant="outline" size="sm" className="border-white text-white hover:bg-white hover:text-black">
+                  <Button asChild variant="outline" size="sm" className="border-gray-600 text-gray-700 hover:bg-gray-600 hover:text-white">
                     <Link to="/auth" onClick={() => setMobileMenuOpen(false)}>
                       Sign Up
                     </Link>
