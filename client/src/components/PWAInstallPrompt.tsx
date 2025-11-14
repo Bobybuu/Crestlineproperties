@@ -104,7 +104,7 @@ const PWAInstallPrompt = () => {
 
 Your app will open like a native application!`);
       } else if (/iphone|ipad|ipod/i.test(navigator.userAgent)) {
-        alert(`To install PristinePrimier:
+        alert(`To install Crestlineproperties on iOS:
         
 1. Tap the Share button (📤) in Safari
 2. Scroll down and tap "Add to Home Screen"
@@ -135,7 +135,7 @@ Look for the install icon in your browser's address bar, or check the browser me
   return (
     <div className="fixed bottom-4 left-4 right-4 md:left-auto md:right-4 md:max-w-sm bg-white border border-gray-200 rounded-lg shadow-lg z-50 p-4 animate-in slide-in-from-bottom-4">
       <div className="flex items-start gap-3">
-        <div className="flex-shrink-0 w-10 h-10 bg-[#f77f77] rounded-full flex items-center justify-center">
+        <div className="flex-shrink-0 w-10 h-10 bg-[#7e93f3] rounded-full flex items-center justify-center">
           <Smartphone className="h-5 w-5 text-white" />
         </div>
         
@@ -159,7 +159,7 @@ Look for the install icon in your browser's address bar, or check the browser me
             <Button 
               onClick={handleInstallClick}
               size="sm" 
-              className="bg-[#f77f77] hover:bg-[#f77f77]/90 text-white text-xs"
+              className="bg-[#7e93f3] hover:bg-[#6849F0FF]/90 text-white text-xs"
             >
               <Download className="h-3 w-3 mr-1" />
               Install
