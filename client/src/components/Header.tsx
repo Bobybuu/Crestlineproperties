@@ -111,7 +111,7 @@ const Header = () => {
               {user ? (
                 <>
                   <span className="text-sm text-gray-600">
-                    Welcome, {getUserDisplayName()}
+                    {getUserDisplayName()}
                   </span>
                   <Button asChild variant="outline" size="sm" className="border-gray-600 text-gray-700 hover:bg-gray-600 hover:text-white">
                     <Link to={getDashboardPath()}>
