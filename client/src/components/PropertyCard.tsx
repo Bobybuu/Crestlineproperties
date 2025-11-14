@@ -179,7 +179,7 @@ const PropertyCard = ({ property, viewMode = 'grid', className = "" }: PropertyC
           }`}>
             {imageLoading && !imageError && (
               <div className="absolute inset-0 bg-gray-100 flex items-center justify-center">
-                <div className="animate-spin rounded-full h-6 w-6 border-b-2 border-[#f77f77]"></div>
+                <div className="animate-spin rounded-full h-6 w-6 border-b-2 border-[#7e93f3]"></div>
               </div>
             )}
             <img
@@ -201,7 +201,7 @@ const PropertyCard = ({ property, viewMode = 'grid', className = "" }: PropertyC
             <span className={`px-2 py-1 rounded-full text-xs font-medium ${
               property.status === 'sold' || property.status === 'rented' 
                 ? 'bg-red-100 text-red-800' 
-                : 'bg-[#f77f77] text-white'
+                : 'bg-[#7e93f3] text-white'
             }`}>
               {statusLabel}
             </span>
@@ -220,7 +220,7 @@ const PropertyCard = ({ property, viewMode = 'grid', className = "" }: PropertyC
 
           {/* Featured Badge */}
           {property.featured && (
-            <div className="absolute bottom-3 left-3 bg-yellow-500 text-white px-2 py-1 rounded-full text-xs font-medium">
+            <div className="absolute bottom-3 left-3 bg-[#7e93f3] text-white px-2 py-1 rounded-full text-xs font-medium">
               Featured
             </div>
           )}
@@ -365,10 +365,10 @@ const PropertyCard = ({ property, viewMode = 'grid', className = "" }: PropertyC
             )}
           </div>
 
-          {/* CTA Button 
-          <button className="w-full bg-[#f77f77] hover:bg-[#f56a6a] text-white py-2.5 px-4 rounded-lg transition-colors duration-200 font-medium text-sm mt-4">
+          {/* CTA Button */}
+          <button className="w-full bg-[#7e93f3] hover:bg-[#6849F0FF]/90 text-white py-2.5 px-4 rounded-lg transition-colors duration-200 font-medium text-sm mt-4">
             View Details
-          </button> */}
+          </button> 
         </CardContent>
       </Card>
     </Link>
