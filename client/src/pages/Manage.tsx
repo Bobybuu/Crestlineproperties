@@ -173,7 +173,7 @@ const Manage = () => {
                     <Button
                       className={`w-full ${
                         pkg.popular 
-                          ? 'bg-[#f77f77] hover:bg-[#f77f77]/90 text-white' 
+                          ? 'bg-[#3c84e2] hover:bg-[#6919EBFF]/90 text-white' 
                           : 'bg-[#1f1e1d] hover:bg-[#1f1e1d]/90 text-white'
                       }`}
                     >
