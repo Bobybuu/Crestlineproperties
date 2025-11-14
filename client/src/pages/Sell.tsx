@@ -297,21 +297,8 @@ const Sell = () => {
                 </Button>
               </div>
               
-              {/* Stats */}
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-16 pt-8 border-t border-white/20">
-                <div className="text-center">
-                  <div className="text-3xl md:text-4xl font-bold mb-2">98%</div>
-                  <div className="text-blue-100">Satisfaction Rate</div>
-                </div>
-                <div className="text-center">
-                  <div className="text-3xl md:text-4xl font-bold mb-2">30</div>
-                  <div className="text-blue-100">Days Average Sale</div>
-                </div>
-                <div className="text-center">
-                  <div className="text-3xl md:text-4xl font-bold mb-2">15%</div>
-                  <div className="text-blue-100">Above Market Price</div>
-                </div>
-              </div>
+            
+              
             </div>
           </div>
         </section>
