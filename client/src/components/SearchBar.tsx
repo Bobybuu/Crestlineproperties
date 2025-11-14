@@ -53,13 +53,13 @@ const SearchBar = ({ onSearch, variant = 'hero' }: SearchBarProps) => {
         {/* Main Search Input - Grows to fill available space */}
         <div className="flex-1">
           <div className="relative">
-            <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-[#577A26]" />
+            <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-[#B1BCFDFF]" />
             <Input
               type="text"
               placeholder="Search properties by title, location, or description..."
               value={filters.search}
               onChange={(e) => updateFilter('search', e.target.value)}
-              className="pl-10 h-11 text-sm border-[#577A26]/30 focus:border-[#577A26] focus:ring-[#577A26]/20 w-full"
+              className="pl-10 h-11 text-sm border-[#B1BCFDFF]/30 focus:border-[#b899f3] focus:ring-[#6A5FFDFF]/20 w-full"
             />
           </div>
         </div>
