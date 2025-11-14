@@ -144,10 +144,10 @@
 
     <div id="root"></div>
     
-    <!-- CRITICAL FIX: This loads your React app -->
+    <!--React app -->
     <script type="module" src="/src/main.tsx"></script>
     
-    <!-- Service Worker Registration - Only in Production -->
+    <!-- Service Worker Registration in Production -->
     <script>
       // Only register service worker in production
       if ('serviceWorker' in navigator && !window.location.hostname.includes('localhost') && !window.location.hostname.includes('127.0.0.1')) {
