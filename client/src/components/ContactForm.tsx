@@ -276,7 +276,7 @@ const ContactForm = ({ propertyId, formType = 'inquiry', onSubmit }: ContactForm
         type="submit" 
         size="lg" 
         disabled={loading} 
-        className="w-full bg-[#f77f77] text-white border-[#f77f77] hover:bg-[#f56a6a] hover:border-[#f56a6a] transition-colors"
+        className="w-full bg-[#7e93f3] text-white border-[#a2a1eb] hover:bg-[#6849F0FF]/90 hover:border-[#6849F0FF]/90 transition-colors"
       >
         {getSubmitButtonText()}
       </Button>

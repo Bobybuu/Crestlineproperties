@@ -85,7 +85,7 @@ const SearchBar = ({ onSearch, variant = 'hero' }: SearchBarProps) => {
         {/* Search Button - Fixed width on desktop */}
         <Button
           type="submit"
-          className="h-11 text-sm font-medium bg-[#f77f77] hover:bg-[#f77f77]/90 text-white border border-[#f77f77] w-full md:w-32"
+          className="h-11 text-sm font-medium bg-[#7e93f3] hover:bg-[#6849F0FF]/90 text-white border border-[#a2a1eb] w-full md:w-32"
         >
           <Search className="h-4 w-4 mr-2" />
           Search
