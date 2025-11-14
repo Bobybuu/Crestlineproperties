@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { ArrowRight, Home as HomeIcon, DollarSign, Building2, Star, Key } from 'lucide-react';
+import { ArrowRight, Home as HomeIcon, DollarSign, Building2, Star, Key, Pause, Play } from 'lucide-react';
 import { FaWhatsapp } from 'react-icons/fa';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
@@ -13,10 +13,13 @@ import LoadingSpinner from '@/components/LoadingSpinner';
 import PWAInstallPrompt from '@/components/PWAInstallPrompt'; 
 import { useNewsletterPopup } from '@/hooks/useNewsletterPopup';
 import NewsletterPopup from '@/components/NewsletterPopup';
+import { useState, useEffect, useRef } from 'react';
 
 const Index = (): JSX.Element => {
   const { featuredProperties, loading, error } = useFeaturedProperties();
   const { showPopup, setShowPopup } = useNewsletterPopup();
+  const [isPlaying, setIsPlaying] = useState(true);
+  const scrollContainerRef = useRef<HTMLDivElement>(null);
   
   const handleSearch = (filters: PropertyFilters): void => {
     const queryParams = new URLSearchParams();
@@ -37,6 +40,136 @@ const Index = (): JSX.Element => {
       });
     }
   };
+
+  // Auto-scroll animation
+  useEffect(() => {
+    if (!scrollContainerRef.current || !isPlaying) return;
+
+    const scrollContainer = scrollContainerRef.current;
+    const scrollWidth = scrollContainer.scrollWidth;
+    const clientWidth = scrollContainer.clientWidth;
+    let scrollPosition = 0;
+    let direction = 1; // 1 for right to left, -1 for left to right
+
+    const scroll = () => {
+      if (!isPlaying) return;
+
+      scrollPosition += direction * 0.5; // Adjust speed here
+
+      // Reverse direction when reaching edges
+      if (scrollPosition >= scrollWidth - clientWidth) {
+        direction = -1;
+      } else if (scrollPosition <= 0) {
+        direction = 1;
+      }
+
+      scrollContainer.scrollLeft = scrollPosition;
+      requestAnimationFrame(scroll);
+    };
+
+    const animationId = requestAnimationFrame(scroll);
+    
+    return () => {
+      cancelAnimationFrame(animationId);
+    };
+  }, [isPlaying]);
+
+  const togglePlayPause = () => {
+    setIsPlaying(!isPlaying);
+  };
+
+  // CTA cards data for the carousel
+  const ctaCards = [
+    {
+      to: "/buy",
+      icon: HomeIcon,
+      iconColor: "text-teal",
+      bgColor: "bg-teal/10",
+      hoverBgColor: "group-hover:bg-teal/20",
+      title: "Buy a House",
+      description: "Explore thousands of properties ready for you",
+      linkText: "Browse Listings",
+      textColor: "text-teal"
+    },
+    {
+      to: "/sell",
+      icon: DollarSign,
+      iconColor: "text-accent",
+      bgColor: "bg-accent/10",
+      hoverBgColor: "group-hover:bg-accent/20",
+      title: "Sell a House",
+      description: "Get the best price for your property",
+      linkText: "Get Started",
+      textColor: "text-accent"
+    },
+    {
+      to: "/rent",
+      icon: Key,
+      iconColor: "text-primary",
+      bgColor: "bg-primary/10",
+      hoverBgColor: "group-hover:bg-primary/20",
+      title: "Rent Property",
+      description: "Find your perfect rental home today",
+      linkText: "Browse Rentals",
+      textColor: "text-primary"
+    },
+    {
+      to: "/manage",
+      icon: Building2,
+      iconColor: "text-gold",
+      bgColor: "bg-gold/10",
+      hoverBgColor: "group-hover:bg-gold/20",
+      title: "Manage Property",
+      description: "Professional property management services",
+      linkText: "Learn More",
+      textColor: "text-gold"
+    },
+    // Duplicate cards for seamless looping
+    {
+      to: "/buy",
+      icon: HomeIcon,
+      iconColor: "text-teal",
+      bgColor: "bg-teal/10",
+      hoverBgColor: "group-hover:bg-teal/20",
+      title: "Buy a House",
+      description: "Explore thousands of properties ready for you",
+      linkText: "Browse Listings",
+      textColor: "text-teal"
+    },
+    {
+      to: "/sell",
+      icon: DollarSign,
+      iconColor: "text-accent",
+      bgColor: "bg-accent/10",
+      hoverBgColor: "group-hover:bg-accent/20",
+      title: "Sell a House",
+      description: "Get the best price for your property",
+      linkText: "Get Started",
+      textColor: "text-accent"
+    },
+    {
+      to: "/rent",
+      icon: Key,
+      iconColor: "text-primary",
+      bgColor: "bg-primary/10",
+      hoverBgColor: "group-hover:bg-primary/20",
+      title: "Rent Property",
+      description: "Find your perfect rental home today",
+      linkText: "Browse Rentals",
+      textColor: "text-primary"
+    },
+    {
+      to: "/manage",
+      icon: Building2,
+      iconColor: "text-gold",
+      bgColor: "bg-gold/10",
+      hoverBgColor: "group-hover:bg-gold/20",
+      title: "Manage Property",
+      description: "Professional property management services",
+      linkText: "Learn More",
+      textColor: "text-gold"
+    }
+  ];
 
   return (
     <div className="flex flex-col min-h-screen">
@@ -131,70 +264,79 @@ const Index = (): JSX.Element => {
           </div>
         </section>
 
-        {/* Rest of your existing code remains the same */}
-        <section className="py-16 bg-secondary">
+        {/* Animated CTA Carousel Section */}
+        <section className="py-16 bg-secondary overflow-hidden">
           <div className="container mx-auto px-4">
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-              <Link to="/buy">
-                <div className="group bg-card p-8 rounded-lg shadow-md hover:shadow-elegant transition-smooth text-center cursor-pointer">
-                  <div className="w-16 h-16 bg-teal/10 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-teal/20 transition-base">
-                    <HomeIcon className="h-8 w-8 text-teal" />
-                  </div>
-                  <h3 className="text-xl font-semibold mb-2">Buy a House</h3>
-                  <p className="text-muted-foreground mb-4">
-                    Explore thousands of properties ready for you
-                  </p>
-                  <span className="text-teal font-medium flex items-center justify-center gap-2 group-hover:gap-3 transition-base">
-                    Browse Listings <ArrowRight className="h-4 w-4" />
-                  </span>
-                </div>
-              </Link>
+            <div className="flex items-center justify-between mb-8">
+              <div>
+                <h2 className="text-3xl md:text-4xl font-light mb-2">Our Services</h2>
+                <p className="text-muted-foreground text-lg">
+                  Discover how we can help you with your real estate needs
+                </p>
+              </div>
+              
+              {/* Play/Pause Control */}
+              <button
+                onClick={togglePlayPause}
+                className="flex items-center gap-2 px-4 py-2 bg-white/80 hover:bg-white rounded-full shadow-md transition-all duration-200 group"
+                aria-label={isPlaying ? "Pause animation" : "Play animation"}
+              >
+                {isPlaying ? (
+                  <>
+                    <Pause className="h-5 w-5 text-gray-700 group-hover:text-gray-900" />
+                    <span className="text-sm font-medium text-gray-700 group-hover:text-gray-900">Pause</span>
+                  </>
+                ) : (
+                  <>
+                    <Play className="h-5 w-5 text-gray-700 group-hover:text-gray-900" />
+                    <span className="text-sm font-medium text-gray-700 group-hover:text-gray-900">Play</span>
+                  </>
+                )}
+              </button>
+            </div>
 
-              {/* Other CTA cards remain the same */}
-              <Link to="/sell">
-                <div className="group bg-card p-8 rounded-lg shadow-md hover:shadow-elegant transition-smooth text-center cursor-pointer">
-                  <div className="w-16 h-16 bg-accent/10 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-accent/20 transition-base">
-                    <DollarSign className="h-8 w-8 text-accent" />
-                  </div>
-                  <h3 className="text-xl font-semibold mb-2">Sell a House</h3>
-                  <p className="text-muted-foreground mb-4">
-                    Get the best price for your property
-                  </p>
-                  <span className="text-accent font-medium flex items-center justify-center gap-2 group-hover:gap-3 transition-base">
-                    Get Started <ArrowRight className="h-4 w-4" />
-                  </span>
-                </div>
-              </Link>
+            {/* Scrollable Container */}
+            <div className="relative">
+              <div
+                ref={scrollContainerRef}
+                className="flex gap-6 overflow-x-hidden scrollbar-hide"
+                style={{ scrollBehavior: 'auto' }}
+              >
+                {ctaCards.map((card, index) => (
+                  <Link 
+                    key={index} 
+                    to={card.to}
+                    className="flex-shrink-0 w-[280px] md:w-[320px] group bg-card p-6 md:p-8 rounded-lg shadow-md hover:shadow-elegant transition-smooth text-center cursor-pointer"
+                  >
+                    <div className={`w-14 h-14 md:w-16 md:h-16 ${card.bgColor} rounded-full flex items-center justify-center mx-auto mb-4 ${card.hoverBgColor} transition-base`}>
+                      <card.icon className={`h-7 w-7 md:h-8 md:w-8 ${card.iconColor}`} />
+                    </div>
+                    <h3 className="text-lg md:text-xl font-semibold mb-2">{card.title}</h3>
+                    <p className="text-muted-foreground text-sm md:text-base mb-4">
+                      {card.description}
+                    </p>
+                    <span className={`${card.textColor} font-medium flex items-center justify-center gap-2 group-hover:gap-3 transition-base text-sm md:text-base`}>
+                      {card.linkText} <ArrowRight className="h-4 w-4" />
+                    </span>
+                  </Link>
+                ))}
+              </div>
 
-              <Link to="/rent">
-                <div className="group bg-card p-8 rounded-lg shadow-md hover:shadow-elegant transition-smooth text-center cursor-pointer">
-                  <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-primary/20 transition-base">
-                    <Key className="h-8 w-8 text-primary" />
-                  </div>
-                  <h3 className="text-xl font-semibold mb-2">Rent Property</h3>
-                  <p className="text-muted-foreground mb-4">
-                    Find your perfect rental home today
-                  </p>
-                  <span className="text-primary font-medium flex items-center justify-center gap-2 group-hover:gap-3 transition-base">
-                    Browse Rentals <ArrowRight className="h-4 w-4" />
-                  </span>
-                </div>
-              </Link>
+              {/* Gradient overlays for smooth edges */}
+              <div className="absolute left-0 top-0 bottom-0 w-20 bg-gradient-to-r from-secondary to-transparent pointer-events-none" />
+              <div className="absolute right-0 top-0 bottom-0 w-20 bg-gradient-to-l from-secondary to-transparent pointer-events-none" />
+            </div>
 
-              <Link to="/manage">
-                <div className="group bg-card p-8 rounded-lg shadow-md hover:shadow-elegant transition-smooth text-center cursor-pointer">
-                  <div className="w-16 h-16 bg-gold/10 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-gold/20 transition-base">
-                    <Building2 className="h-8 w-8 text-gold" />
-                  </div>
-                  <h3 className="text-xl font-semibold mb-2">Manage Property</h3>
-                  <p className="text-muted-foreground mb-4">
-                    Professional property management services
-                  </p>
-                  <span className="text-gold font-medium flex items-center justify-center gap-2 group-hover:gap-3 transition-base">
-                    Learn More <ArrowRight className="h-4 w-4" />
-                  </span>
-                </div>
-              </Link>
+            {/* Mobile indicator dots */}
+            <div className="flex justify-center gap-2 mt-6 md:hidden">
+              {[0, 1, 2, 3].map((dot) => (
+                <div
+                  key={dot}
+                  className={`w-2 h-2 rounded-full transition-colors duration-200 ${
+                    dot === 0 ? 'bg-primary' : 'bg-gray-300'
+                  }`}
+                />
+              ))}
             </div>
           </div>
         </section>
