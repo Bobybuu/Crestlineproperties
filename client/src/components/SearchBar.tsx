@@ -67,8 +67,8 @@ const SearchBar = ({ onSearch, variant = 'hero' }: SearchBarProps) => {
         {/* Property Type - Fixed width on desktop */}
         <div className="w-full md:w-48">
           <Select value={filters.property_type} onValueChange={(value) => updateFilter('property_type', value)}>
-            <SelectTrigger className="h-11 text-sm border-[#577A26]/30 focus:border-[#577A26] focus:ring-[#577A26]/20 w-full">
-              <Home className="h-4 w-4 mr-2 text-[#577A26]" />
+            <SelectTrigger className="h-11 text-sm border-[#8E9EF8FF]/30 focus:border-[#b899f3] focus:ring-[#6A5FFDFF]/20 w-full">
+              <Home className="h-4 w-4 mr-2 text-[#8fa6f0]" />
               <SelectValue placeholder="All Types" />
             </SelectTrigger>
             <SelectContent>
