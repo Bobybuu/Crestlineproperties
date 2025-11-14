@@ -54,7 +54,7 @@ const Index = (): JSX.Element => {
     const scroll = () => {
       if (!isPlaying) return;
 
-      scrollPosition += direction * 0.5; // Adjust speed here
+      scrollPosition += direction * 1.0; // Adjust speed here
 
       // Reverse direction when reaching edges
       if (scrollPosition >= scrollWidth - clientWidth) {
