@@ -160,7 +160,7 @@ const handleNewsletterSubmit = async (e: React.FormEvent) => {
           {/* Social Media Links */}
           <div className="flex space-x-4">
             <a 
-              href="https://web.facebook.com/people/PristinePrimer-Real-Estate/61578142085551/" 
+              href="#" 
               target="_blank" 
               rel="noopener noreferrer"
               aria-label="Facebook" 
@@ -171,7 +171,7 @@ const handleNewsletterSubmit = async (e: React.FormEvent) => {
               </svg>
             </a>
             <a 
-            href="https://www.instagram.com/pristineprimier.re?igsh=ZmFna3p4d2RuZXF4" 
+            href="#" 
             target="_blank" 
             rel="noopener noreferrer"
             aria-label="Instagram" 
@@ -182,7 +182,7 @@ const handleNewsletterSubmit = async (e: React.FormEvent) => {
             </svg>
           </a>
             <a 
-              href="https://x.com/PristinePrimier?t=rtYfB5-tSYumWfICk6vKfA&s=09" 
+              href="#" 
               target="_blank" 
               rel="noopener noreferrer"
               aria-label="Twitter" 
@@ -193,7 +193,7 @@ const handleNewsletterSubmit = async (e: React.FormEvent) => {
               </svg>
             </a>
             <a 
-              href="https://youtube.com/@pristineprimierre?si=5tWPIODLQIQj_rzG" 
+              href="#" 
               target="_blank" 
               rel="noopener noreferrer"
               aria-label="YouTube" 
@@ -204,7 +204,7 @@ const handleNewsletterSubmit = async (e: React.FormEvent) => {
               </svg>
             </a>
             <a 
-              href="https://www.tiktok.com/@pristineprimer.re?_t=ZM-90NhiAPtt8d&_r=1"
+              href="#"
               target="_blank" 
               rel="noopener noreferrer"
               aria-label="TikTok" 
