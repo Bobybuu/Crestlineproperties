@@ -149,8 +149,8 @@ const Privacy = (): JSX.Element => {
                     asChild
                     className="bg-[#f77f77] hover:bg-[#f77f77]/90 text-white border border-[#f77f77] shadow-sm w-full"
                   >
-                    <a href="mailto:dpo@pristineprimer.com">
-                      dpo@pristineprimer.com
+                    <a href="mailto:dpo@crestlineproperties.co.ke">
+                      dpo@crestlineproperties.co.ke
                     </a>
                   </Button>
                 </CardContent>

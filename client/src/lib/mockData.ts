@@ -165,7 +165,7 @@ export const mockTestimonials = [
     id: '1',
     name: 'Sarah Johnson',
     role: 'Home Buyer',
-    content: 'PristinePrimier made finding our dream home effortless. Their team was professional, responsive, and truly understood our needs.',
+    content: 'Crestlineproperties made finding our dream home effortless. Their team was professional, responsive, and truly understood our needs.',
     rating: 5,
   },
   {

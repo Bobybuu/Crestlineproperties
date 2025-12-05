@@ -269,7 +269,7 @@ const Auth = () => {
             <Card>
               <CardHeader>
                 <CardTitle>Create Account</CardTitle>
-                <CardDescription>Join PristinePrimier to start your real estate journey</CardDescription>
+                <CardDescription>Join Crestlineproperties to start your real estate journey</CardDescription>
               </CardHeader>
               <CardContent>
                 <form onSubmit={handleSignup} className="space-y-4">

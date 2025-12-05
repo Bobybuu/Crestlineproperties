@@ -146,7 +146,7 @@ const Faq = (): JSX.Element => {
           answer: 'We analyze location growth potential, rental yields, development plans in the area, infrastructure projects, and market trends. We provide investment reports to help you make informed decisions based on your financial goals.'
         },
         {
-          question: 'What makes PristinePrimier different from other agencies?',
+          question: 'What makes Crestlineproperties different from other agencies?',
           answer: 'We offer end-to-end services from buying/selling to property management, have transparent pricing, provide regular market insights, and maintain a strong focus on client education. Our 15+ years experience and 98% client satisfaction rate speak to our commitment.'
         }
       ]

@@ -161,8 +161,8 @@ const Terms = (): JSX.Element => {
                     asChild
                     className="bg-[#f77f77] hover:bg-[#f77f77]/90 text-white w-full border-0 shadow-sm"
                   >
-                    <a href="mailto:legal@pristineprimer.com">
-                      legal@pristineprimer.com
+                    <a href="mailto:legal@crestlineproperties.co.ke">
+                      legal@crestlineproperties.co.ke
                     </a>
                   </Button>
                 </CardContent>

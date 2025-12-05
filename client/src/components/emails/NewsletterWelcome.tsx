@@ -12,16 +12,16 @@ export const NewsletterWelcomeEmail: React.FC<WelcomeEmailProps> = ({
   return (
     <div style={{ fontFamily: 'Arial, sans-serif', maxWidth: '600px', margin: '0 auto' }}>
       <div style={{ background: '#1f1e1d', color: 'white', padding: '20px', textAlign: 'center' }}>
-        <h1>PristinePrimier Real Estate</h1>
+        <h1>Crestlineproperties Real Estate</h1>
       </div>
       
       <div style={{ background: '#f9f9f9', padding: '30px' }}>
         <h2>Welcome to Our Newsletter, {subscriberName}!</h2>
-        <p>Thank you for joining the PristinePrimier Real Estate newsletter!</p>
+        <p>Thank you for joining the Crestlineproperties Real Estate newsletter!</p>
         
         <div style={{ textAlign: 'center', margin: '30px 0' }}>
           <a 
-            href="https://pristineprimier.com/properties" 
+            href="https://crestlineproperties.co.ke/properties" 
             style={{
               background: '#f77f77',
               color: 'white',
@@ -55,7 +55,7 @@ export const renderEmailToString = (unsubscribeUrl: string, subscriberName: stri
     <head>
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Welcome to PristinePrimier Newsletter</title>
+      <title>Welcome to Crestlineproperties Newsletter</title>
       <style>
         body { 
           font-family: Arial, sans-serif; 
@@ -104,12 +104,12 @@ export const renderEmailToString = (unsubscribeUrl: string, subscriberName: stri
     </head>
     <body>
       <div class="header">
-        <h1 style="margin: 0; font-size: 24px;">PristinePrimier Real Estate</h1>
+        <h1 style="margin: 0; font-size: 24px;">Crestlineproperties Real Estate</h1>
       </div>
       
       <div class="content">
         <h2 style="color: #1f1e1d; margin-top: 0;">Welcome to Our Newsletter, ${subscriberName}!</h2>
-        <p style="font-size: 16px; color: #555;">Thank you for joining the PristinePrimier Real Estate newsletter! You'll now receive:</p>
+        <p style="font-size: 16px; color: #555;">Thank you for joining the Crestlineproperties Real Estate newsletter! You'll now receive:</p>
         <ul style="color: #555; font-size: 14px;">
           <li>Exclusive property listings</li>
           <li>Market insights and trends</li>
@@ -118,7 +118,7 @@ export const renderEmailToString = (unsubscribeUrl: string, subscriberName: stri
         </ul>
         
         <div style="text-align: center; margin: 30px 0;">
-          <a href="https://pristineprimier.com/properties" class="button">
+          <a href="https://crestlineproperties.co.ke/properties" class="button">
             Browse Properties
           </a>
         </div>
@@ -135,7 +135,7 @@ export const renderEmailToString = (unsubscribeUrl: string, subscriberName: stri
           </a>
         </p>
         <p style="margin: 10px 0 0 0; font-size: 12px; opacity: 0.8;">
-          PristinePrimier Real Estate &copy; ${new Date().getFullYear()}
+          Crestlineproperties Real Estate &copy; ${new Date().getFullYear()}
         </p>
       </div>
     </body>
@@ -145,10 +145,10 @@ export const renderEmailToString = (unsubscribeUrl: string, subscriberName: stri
 
 // Optional: Export a function to generate the actual email content for backend use
 export const generateWelcomeEmailContent = (unsubscribeUrl: string, subscriberName?: string) => {
-  const subject = 'Welcome to PristinePrimier Real Estate Newsletter!';
+  const subject = 'Welcome to Crestlineproperties Real Estate Newsletter!';
   const htmlContent = renderEmailToString(unsubscribeUrl, subscriberName);
   const textContent = `
-Welcome to PristinePrimier Real Estate Newsletter, ${subscriberName || 'Subscriber'}!
+Welcome to Crestlineproperties Real Estate Newsletter, ${subscriberName || 'Subscriber'}!
 
 Thank you for joining our newsletter! You'll now receive:
 - Exclusive property listings
@@ -156,15 +156,15 @@ Thank you for joining our newsletter! You'll now receive:
 - Special offers and promotions
 - Real estate investment tips
 
-Browse our properties: https://pristineprimier.com/properties
+Browse our properties: https://crestlineproperties.co.ke/properties
 
 If you no longer wish to receive these emails, you can unsubscribe here:
 ${unsubscribeUrl}
 
 Best regards,
-The PristinePrimier Team
+The Crestlineproperties Team
 
-© ${new Date().getFullYear()} PristinePrimier Real Estate
+© ${new Date().getFullYear()} Crestlineproperties Real Estate
   `.trim();
 
   return {
