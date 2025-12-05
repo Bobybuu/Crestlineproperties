@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { CheckCircle, Shield, DollarSign, Wrench, Users, FileCheck, Scale, UserSearch, BankNote } from 'lucide-react';
+import { CheckCircle, Shield, DollarSign, Wrench, Users, FileCheck, Scale, UserSearch, Banknote } from 'lucide-react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import ContactForm from '@/components/ContactForm';
@@ -9,7 +9,7 @@ import { Card, CardContent } from '@/components/ui/card';
 const Manage = () => {
   const services = [
     {
-      icon: BankNote,
+      icon: Banknote,
       title: 'Rent Collection',
       description: 'Automated rent collection and payment processing. On-time payments guaranteed.',
     },
@@ -114,8 +114,8 @@ const Manage = () => {
               {services.map((service, index) => (
                 <Card key={index} className="hover:shadow-elegant transition-smooth">
                   <CardContent className="p-6">
-                    <div className="w-14 h-14 bg-teal/10 rounded-lg flex items-center justify-center mb-4">
-                      <service.icon className="h-7 w-7 text-teal" />
+                    <div className="w-14 h-14  rounded-lg flex items-center justify-center mb-4">
+                      <service.icon className="h-7 w-7 " />
                     </div>
                     <h3 className="text-xl font-medium mb-2">{service.title}</h3>
                     <p className="text-muted-foreground">{service.description}</p>

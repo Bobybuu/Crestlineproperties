@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { Building2, Users, Target, Award, Shield, Heart } from 'lucide-react';
+import { Building2, Users, HandHelpingIcon, Award, BadgeDollarSignIcon, Heart, BookCheck, PartyPopper, SpeechIcon, Gavel  } from 'lucide-react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { Button } from '@/components/ui/button';
@@ -15,12 +15,12 @@ const About = (): JSX.Element => {
 
   const values = [
     {
-      icon: Shield,
+      icon: BookCheck,
       title: 'Trust & Integrity',
       description: 'We build lasting relationships based on transparency and ethical practices in every transaction.'
     },
     {
-      icon: Target,
+      icon: PartyPopper,
       title: 'Excellence',
       description: 'Committed to delivering exceptional service and results that exceed client expectations.'
     },
@@ -30,7 +30,7 @@ const About = (): JSX.Element => {
       description: 'Your goals are our priority. We listen, understand, and deliver personalized solutions.'
     },
     {
-      icon: Heart,
+      icon: SpeechIcon,
       title: 'Community',
       description: 'Dedicated to building better communities through responsible real estate development.'
     }
@@ -62,7 +62,7 @@ const About = (): JSX.Element => {
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-2">
             <Button 
               asChild 
-              className="bg-[#f77f77] hover:bg-[#f77f77]/90 text-white border border-[#f77f77]"
+              className="bg-[#968cee] hover:bg-[#4861A8FF]/90 text-white border border-[#c1d1e6]"
             >
               <Link to="/contact">Get In Touch</Link>
             </Button>
@@ -156,8 +156,8 @@ const About = (): JSX.Element => {
                 <Card key={index} className="hover:shadow-elegant transition-smooth">
                   <CardContent className="p-6">
                     <div className="flex items-start gap-4">
-                      <div className="w-12 h-12 bg-teal/10 rounded-full flex items-center justify-center flex-shrink-0">
-                        <value.icon className="h-6 w-6 text-teal" />
+                      <div className="w-12 h-12  rounded-full flex items-center justify-center flex-shrink-0">
+                        <value.icon className="h-6 w-6 " />
                       </div>
                       <div>
                         <h3 className="text-xl font-medium mb-2">{value.title}</h3>
@@ -185,8 +185,8 @@ const About = (): JSX.Element => {
               {team.map((member, index) => (
                 <Card key={index} className="text-center hover:shadow-elegant transition-smooth">
                   <CardContent className="p-6">
-                    <div className="w-20 h-20 bg-teal/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                      <Users className="h-8 w-8 text-teal" />
+                    <div className="w-20 h-20  rounded-full flex items-center justify-center mx-auto mb-4">
+                      <Users className="h-8 w-8 " />
                     </div>
                     <h3 className="text-lg font-medium mb-2">{member.name}</h3>
                     <p className="text-teal font-semibold mb-3">{member.role}</p>
@@ -210,7 +210,7 @@ const About = (): JSX.Element => {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                 <div className="space-y-6">
                   <div className="flex items-start gap-4">
-                    <Award className="h-6 w-6 text-teal mt-1 flex-shrink-0" />
+                    <Award className="h-6 w-6  mt-1 flex-shrink-0" />
                     <div>
                       <h3 className="font-medium mb-2 text-xl">Award-Winning Service</h3>
                       <p className="text-muted-foreground text-sm">
@@ -220,7 +220,7 @@ const About = (): JSX.Element => {
                   </div>
                   
                   <div className="flex items-start gap-4">
-                    <Shield className="h-6 w-6 text-teal mt-1 flex-shrink-0" />
+                    <Gavel className="h-6 w-6  mt-1 flex-shrink-0" />
                     <div>
                       <h3 className="font-medium mb-2 text-xl">Full Legal Compliance</h3>
                       <p className="text-muted-foreground text-sm">
@@ -232,7 +232,7 @@ const About = (): JSX.Element => {
 
                 <div className="space-y-6">
                   <div className="flex items-start gap-4">
-                    <Target className="h-6 w-6 text-teal mt-1 flex-shrink-0" />
+                    <BadgeDollarSignIcon className="h-6 w-6  mt-1 flex-shrink-0" />
                     <div>
                       <h3 className="font-medium mb-2 text-xl">Market Expertise</h3>
                       <p className="text-muted-foreground text-sm">
@@ -242,7 +242,7 @@ const About = (): JSX.Element => {
                   </div>
                   
                   <div className="flex items-start gap-4">
-                    <Heart className="h-6 w-6 text-teal mt-1 flex-shrink-0" />
+                    <HandHelpingIcon className="h-6 w-6  mt-1 flex-shrink-0" />
                     <div>
                       <h3 className="font-medium mb-2 text-xl">After-Sales Support</h3>
                       <p className="text-muted-foreground text-sm">
