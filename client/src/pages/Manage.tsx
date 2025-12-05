@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { CheckCircle, Shield, DollarSign, Wrench, Users, FileCheck, ArrowRight } from 'lucide-react';
+import { CheckCircle, Shield, DollarSign, Wrench, Users, FileCheck, Scale, UserSearch, BankNote } from 'lucide-react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import ContactForm from '@/components/ContactForm';
@@ -9,7 +9,7 @@ import { Card, CardContent } from '@/components/ui/card';
 const Manage = () => {
   const services = [
     {
-      icon: DollarSign,
+      icon: BankNote,
       title: 'Rent Collection',
       description: 'Automated rent collection and payment processing. On-time payments guaranteed.',
     },
@@ -19,7 +19,7 @@ const Manage = () => {
       description: '24/7 maintenance coordination with vetted contractors. Emergency response available.',
     },
     {
-      icon: Users,
+      icon: UserSearch,
       title: 'Tenant Screening',
       description: 'Thorough background checks, credit reports, and reference verification.',
     },
@@ -29,7 +29,7 @@ const Manage = () => {
       description: 'Complete lease preparation, renewal management, and compliance monitoring.',
     },
     {
-      icon: Shield,
+      icon: Scale,
       title: 'Legal Protection',
       description: 'Full legal compliance and eviction protection services included.',
     },
